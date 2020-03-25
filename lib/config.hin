@@ -453,8 +453,7 @@
    may be supplied by this distribution. */
 #undef HAVE_ALLOCA
 
-/* Define to 1 if you have <alloca.h> and it should be used (not on Ultrix).
-   */
+/* Define to 1 if <alloca.h> works. */
 #undef HAVE_ALLOCA_H
 
 /* Define to 1 if you have the <bp-sym.h> header file. */
@@ -835,9 +834,6 @@
 /* Define to 1 if <wchar.h> declares mbstate_t. */
 #undef HAVE_MBSTATE_T
 
-/* Define to 1 if you have the <memory.h> header file. */
-#undef HAVE_MEMORY_H
-
 /* Define to 1 if you have the `mempcpy' function. */
 #undef HAVE_MEMPCPY
 
@@ -1023,7 +1019,8 @@
 /* Define to 1 if you have the <strings.h> header file. */
 #undef HAVE_STRINGS_H
 
-/* Define to 1 if you have the <string.h> header file. */
+/* Always define to 1, for backward compatibility. You can assume <string.h>
+   exists. */
 #undef HAVE_STRING_H
 
 /* Define to 1 if you have the `strndup' function. */
@@ -1420,7 +1417,8 @@
 /* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
 #undef STAT_MACROS_BROKEN
 
-/* Define to 1 if you have the ANSI C header files. */
+/* Always define to 1, for backward compatibility. You can assume the C90
+   standard headers exist. */
 #undef STDC_HEADERS
 
 /* Define to 1 if strerror_r returns char *. */

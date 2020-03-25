@@ -222,12 +222,8 @@ AS_CASE([$host], [*-*-os2*], [OS2_LDFLAGS="-Zargs-resp"])
 AC_SUBST([OS2_LDFLAGS])
 
 AC_CONFIG_FILES([Makefile
-                 doc/Makefile
                  lib/Makefile
                  src/Makefile
-                 tests/Makefile
-                 checks/Makefile
-                 examples/Makefile
 ])
 
 AC_OUTPUT
