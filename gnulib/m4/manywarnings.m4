@@ -126,7 +126,6 @@ AC_DEFUN([gl_MANYWARN_ALL_GCC(C)],
     -Winvalid-pch \
     -Wlogical-op \
     -Wmissing-declarations \
-    -Wmissing-include-dirs \
     -Wmissing-prototypes \
     -Wnested-externs \
     -Wnull-dereference \
