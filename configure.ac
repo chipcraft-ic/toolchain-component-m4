@@ -229,13 +229,9 @@ AM_GNU_GETTEXT([external], [need-formatstring-macros])
 AM_GNU_GETTEXT_VERSION([0.19.2])
 
 AC_CONFIG_FILES([Makefile
-                 doc/Makefile
                  lib/Makefile
-		 po/Makefile.in
+                 po/Makefile.in
                  src/Makefile
-                 tests/Makefile
-                 checks/Makefile
-                 examples/Makefile
 ])
 
 AC_OUTPUT

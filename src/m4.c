@@ -166,6 +166,10 @@ static const char * volatile signal_message[NSIG];
    must be aysnc-signal safe, since it is executed as a signal
    handler.  If SIGNO is zero, this represents a stack overflow; in
    that case, we return to allow c_stack_action to handle things.  */
+#if (__GNUC__ == 4 && 9 <= __GNUC_MINOR__) || 4 < __GNUC__
+/* Function may not return normally, do not suggest it can be pure. */
+# pragma GCC diagnostic ignored "-Wsuggest-attribute=pure"
+#endif
 static void
 fault_handler (int signo)
 {
@@ -193,7 +197,6 @@ fault_handler (int signo)
       _exit (EXIT_INTERNAL_ERROR);
     }
 }
-
 
 /*---------------------------------------------.
 | Print a usage message and exit with STATUS.  |

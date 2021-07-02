@@ -21,7 +21,9 @@
 
 #include "m4.h"
 
+#include <assert.h>
 #include <limits.h>
+#include <stddef.h>
 #include <sys/stat.h>
 
 #include "gl_avltree_oset.h"
@@ -409,6 +411,8 @@ make_room_for (int length)
 {
   int wanted_size;
   m4_diversion *selected_diversion = NULL;
+
+  assert(NULL != output_diversion);
 
   /* Compute needed size for in-memory buffer.  Diversions in-memory
      buffers start at 0 bytes, then 512, then keep doubling until it is
