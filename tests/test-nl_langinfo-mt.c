@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-nl_langinfo-mt.c
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-nl_langinfo-mt.c

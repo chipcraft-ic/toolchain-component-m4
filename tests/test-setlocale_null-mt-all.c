@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-setlocale_null-mt-all.c
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-setlocale_null-mt-all.c

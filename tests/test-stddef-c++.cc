@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-stddef-c++.cc
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-stddef-c++.cc

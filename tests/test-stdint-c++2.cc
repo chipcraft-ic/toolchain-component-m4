@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-stdint-c++2.cc
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-stdint-c++2.cc

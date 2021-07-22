@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-strtod1.sh
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-strtod1.sh

@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-malloc-gnu.c
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-malloc-gnu.c

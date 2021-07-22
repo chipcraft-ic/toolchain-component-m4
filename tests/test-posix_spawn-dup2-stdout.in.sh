@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-posix_spawn-dup2-stdout.in.sh
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-posix_spawn-dup2-stdout.in.sh

@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-mbrtowc2.sh
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-mbrtowc2.sh

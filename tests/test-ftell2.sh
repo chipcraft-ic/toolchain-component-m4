@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-ftell2.sh
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-ftell2.sh

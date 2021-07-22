@@ -1,1 +1,1 @@
-/home/mjemieli/WORKSPACE/toolchain-component-m4/gnulib/tests/test-getopt-main.h
+/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-getopt-main.h
