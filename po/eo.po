@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2013-01-30 14:03-0300\n"
 "Last-Translator: Felipe Castro <fefcas@gmail.com>\n"
 "Language-Team: Esperanto <translation-team-eo@lists.sourceforge.net>\n"
@@ -41,11 +41,11 @@ msgstr "eraro dum fermado de eliga dosiero"
 msgid "write error"
 msgstr "skrib-eraro"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "programeraro"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "staktroo"
 
@@ -99,7 +99,7 @@ msgstr "%s: nevalida opcio -- «%c»\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: opcio bezonas argumenton -- «%c»\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "memoro estas plenigita"
 
@@ -677,7 +677,7 @@ msgstr "Ne eblas mal-deturnigi %s"
 msgid "cannot undivert `%s'"
 msgstr "Ne eblas mal-deturnigi %s"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "ne eblas malfermi «%s»"
@@ -701,7 +701,7 @@ msgstr "UTC-deŝovo estas ekster gamo"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "Rafinreĝimo: malĝustaj rafinigaj flagoj: '%s'"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "ne eblas malfermi enigan dosieron «%s»"
@@ -886,17 +886,17 @@ msgstr "ERARO: EOF en ĉeno"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "Provu '%s --help' por pli da informoj.\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Uzmaniero: %s [MODIFILO]... [DOSIERO]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
@@ -905,7 +905,7 @@ msgstr ""
 "\n"
 "Se mankas DOSIERO aŭ se DOSIERO estas '-', ĉefenigo estos legata.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
@@ -914,14 +914,14 @@ msgstr ""
 "(Endaj aŭ eblaj argumentoj por longaj opcioj ankaŭ endas aŭ eblas por\n"
 "iuj korespondaj mallongaj opcioj.)"
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -930,7 +930,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -938,11 +938,11 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr "  -W, --word-regexp=REGESP     uzi REGESP por makro-noma sintakso\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -953,12 +953,13 @@ msgid ""
 msgstr ""
 "\n"
 "Antaŭprocezaj trajtoj:\n"
-"  -I, --include=DOSIERUJO      serĉi tiun ĉi dosierujon poste por inkluzivoj\n"
+"  -I, --include=DOSIERUJO      serĉi tiun ĉi dosierujon poste por "
+"inkluzivoj\n"
 "  -D, --define=NOMO[=VALORO]   enigi NOMOn havantan VALOROn, aŭ malplenan\n"
 "  -U, --undefine=NOMO          forigi la internaĵon NOMO\n"
 "  -s, --synclines              generi liniojn '#line NUM \"DOSIERO\"'\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -973,7 +974,7 @@ msgstr ""
 "  -H, --hashsize=PRIMO         difini grandon de simbolserĉa haktabelo\n"
 "  -L, --nesting-limit=NUMERO   ŝanĝi artefarit-nestan limon\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -982,10 +983,12 @@ msgid ""
 msgstr ""
 "\n"
 "Frostitaj stat-dosieroj:\n"
-"  -F, --freeze-state=DOSIERO   produkti frostitan staton ĉe la fino de DOSIERO\n"
-"  -R, --reload-state=DOSIERO   reŝargi frostitan staton ĉe la komenco de DOSIERO\n"
+"  -F, --freeze-state=DOSIERO   produkti frostitan staton ĉe la fino de "
+"DOSIERO\n"
+"  -R, --reload-state=DOSIERO   reŝargi frostitan staton ĉe la komenco de "
+"DOSIERO\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -997,12 +1000,13 @@ msgid ""
 msgstr ""
 "\n"
 "Rafinigo:\n"
-"  -d, --debug=[FLAGOJ]         difini rafinigan nivelon (sen FLAGOJ implicas 'aeq')\n"
+"  -d, --debug=[FLAGOJ]         difini rafinigan nivelon (sen FLAGOJ implicas "
+"'aeq')\n"
 "  -t, --trace=NOMO             spursekvi NOMOn kiam ĝi estos difinita\n"
 "  -l, --arglength=NUM          limigi kiom spursekvi makroojn\n"
 "  -o, --error-output=DOSIERO   alidirekti rafinigan kaj spursekvan eligon\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -1012,7 +1016,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1022,44 +1026,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "Alvoko kiel 'egrep' malrekomendatas; uzu 'grep -E' anstataŭe.\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "Malĝustaj rafinigaj flagoj: '%s'"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "Alvoko kiel 'egrep' malrekomendatas; uzu 'grep -E' anstataŭe.\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1073,47 +1077,47 @@ msgstr "ERARO: EOF en argument-listo"
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
 msgstr "ERARO: rekursiga limo de %d estis atingata, uzu -L<N> por ŝanĝi ĝin"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "ERARO: ne eblas krei provizoran dosieron por deturno"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "ERARO: ne eblas krei provizoran dosieron por deturno"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "Ne eblas apliki stat en deturno"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "ERARO: ne eblas krei provizoran dosieron por deturno"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "ERARO: ne eblas elbufrigi deturnon al provizora dosiero"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "ERARO: kopio de enmetita dosiero"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "ERARO: lego de enmetita dosiero"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "Ne eblas apliki stat en deturno"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "Deturno tro larĝas"
@@ -1191,7 +1195,9 @@ msgstr "Deturno tro larĝas"
 #~ msgstr "Malĝusta regulesprimo '%s': %s"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table! (trace_pre ())"
-#~ msgstr "INTERNA ERARO: internaĵo ne estis trovata en internaĵ-tabelo! (trace_pre ())"
+#~ msgstr ""
+#~ "INTERNA ERARO: internaĵo ne estis trovata en internaĵ-tabelo! (trace_pre "
+#~ "())"
 
 #~ msgid "INTERNAL ERROR: Bad token data type (trace_pre ())"
 #~ msgstr "INTERNA ERARO: malĝusta ĵetona datumartipo (trace_pre ())"
@@ -1242,7 +1248,8 @@ msgstr "Deturno tro larĝas"
 #~ msgstr "ERARO: Staka troigo.  (Ĉu senfina rekursigo de 'define'?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1259,21 +1266,26 @@ msgstr "Deturno tro larĝas"
 #~ "Funkciadaj reĝimoj:\n"
 #~ "      --help                   montri tiun ĉi mesaĝon kaj eliri\n"
 #~ "      --version                eligi versi-informon kaj eliri\n"
-#~ "  -e, --interactive            malbufrigi eligon, preteratenti interrompojn\n"
+#~ "  -e, --interactive            malbufrigi eligon, preteratenti "
+#~ "interrompojn\n"
 #~ "  -E, --fatal-warnings         haltigi funkciadon post la unua averto\n"
 #~ "  -Q, --quiet, --silent        forigi kelkajn avertojn pri internaĵoj\n"
-#~ "  -P, --prefix-builtins        perforti prefikson 'm4_' al ĉiuj internaĵoj\n"
+#~ "  -P, --prefix-builtins        perforti prefikson 'm4_' al ĉiuj "
+#~ "internaĵoj\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Dinamika-ŝargaj trajtoj:\n"
-#~ "  -m, --module-directory=DOSIERUJO  aldoni DOSIERUJOn al la modula serĉvojo\n"
-#~ "  -M, --load-module=MODULO          ŝargi la dinamikan MODULOn el M4MODPATH\n"
+#~ "  -m, --module-directory=DOSIERUJO  aldoni DOSIERUJOn al la modula "
+#~ "serĉvojo\n"
+#~ "  -M, --load-module=MODULO          ŝargi la dinamikan MODULOn el "
+#~ "M4MODPATH\n"
 
 #~ msgid ""
 #~ "\n"

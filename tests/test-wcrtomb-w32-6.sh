@@ -1,1 +1,4 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-wcrtomb-w32-6.sh
+#!/bin/sh
+
+# Test a GB18030 locale.
+${CHECKER} ./test-wcrtomb-w32${EXEEXT} Chinese_China 54936

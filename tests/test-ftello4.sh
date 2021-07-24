@@ -1,1 +1,5 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-ftello4.sh
+#!/bin/sh
+
+${CHECKER} ./test-ftello4${EXEEXT} "$srcdir/test-ftello4.sh" || exit 1
+
+exit 0

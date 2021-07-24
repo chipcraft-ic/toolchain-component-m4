@@ -1,1 +1,3 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-ftello2.sh
+#!/bin/sh
+
+exec ${CHECKER} ./test-ftello${EXEEXT} 1 2 < "$srcdir/test-ftello2.sh"

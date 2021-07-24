@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2005-02-11 20:51+1030\n"
 "Last-Translator: Clytie Siddall <clytie@riverland.net.au>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net> \n"
-"Language: \n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,11 +40,11 @@ msgstr "gặp lỗi khi đóng tập tin kết xuất"
 msgid "write error"
 msgstr "lỗi ghi"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "lỗi chương trình"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "tràn ngăn xếp"
 
@@ -98,7 +98,7 @@ msgstr "%s: tùy chọn không hợp lệ -- “%c”\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: tùy chọn yêu cầu một đối số -- “%c”\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "hết bộ nhớ"
 
@@ -660,7 +660,7 @@ msgstr "Không thể bỏ việc làm trệch hướng %s"
 msgid "cannot undivert `%s'"
 msgstr "Không thể bỏ việc làm trệch hướng %s"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "không thể mở “%s”"
@@ -684,7 +684,7 @@ msgstr "khoảng bù UT ở ngoài phạm vi"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "Chế độ gỡ lỗi: cờ gỡ lỗi sai: `%s'"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "không thể mở tập tin nhập vào “%s”"
@@ -726,7 +726,8 @@ msgstr "Gặp lỗi khi ghi vào đầu ra tiêu chuẩn"
 #: src/eval.c:318
 #, fuzzy, c-format
 msgid "bad expression in eval (missing right parenthesis): %s"
-msgstr "Biểu thức sai trong eval (việc tính để kiểm tra) - thiếu ngoặc phải: %s"
+msgstr ""
+"Biểu thức sai trong eval (việc tính để kiểm tra) - thiếu ngoặc phải: %s"
 
 #: src/eval.c:324
 #, fuzzy, c-format
@@ -736,12 +737,14 @@ msgstr "Biểu thức sai trong eval (việc tính để kiểm tra): %s"
 #: src/eval.c:329
 #, fuzzy, c-format
 msgid "bad expression in eval (bad input): %s"
-msgstr "Biểu thức sai trong eval (việc tính để kiểm tra) - dữ liệu nhập sai: %s"
+msgstr ""
+"Biểu thức sai trong eval (việc tính để kiểm tra) - dữ liệu nhập sai: %s"
 
 #: src/eval.c:334
 #, fuzzy, c-format
 msgid "bad expression in eval (excess input): %s"
-msgstr "Biểu thức sai trong eval (việc tính để kiểm tra) - quá nhiều dữ liệu nhập: %s"
+msgstr ""
+"Biểu thức sai trong eval (việc tính để kiểm tra) - quá nhiều dữ liệu nhập: %s"
 
 #: src/eval.c:339
 #, fuzzy, c-format
@@ -869,17 +872,17 @@ msgstr "LỖI: gặp kết thức tập tin trong chuỗi"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "Hãy thử lệnh `%s --help' để tìm thấy thông tin thêm.\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Cách sử dụng: %s [TÙY_CHỌN]... [TẬP_TIN]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
@@ -888,21 +891,23 @@ msgstr ""
 "\n"
 "Nếu không có tập tin, hay nếu tập tin là `-', thì đọc dữ liệu nhập chuẩn.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
-msgstr "Các đối số là bắt buộc hay chỉ là tùy chọn khi dùng với tùy chọn dài thì tùy chọn ngắn tương ứng với nó cũng vậy."
+msgstr ""
+"Các đối số là bắt buộc hay chỉ là tùy chọn khi dùng với tùy chọn dài thì tùy "
+"chọn ngắn tương ứng với nó cũng vậy."
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -911,7 +916,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -919,11 +924,13 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
-msgstr "  -W, --word-regexp=BIỂU_THỨC_CHÍNH_QUY     sử dụng biểu thức chính quy ấy đối với cú pháp tên bô lệnh thay thế\n"
+msgstr ""
+"  -W, --word-regexp=BIỂU_THỨC_CHÍNH_QUY     sử dụng biểu thức chính quy ấy "
+"đối với cú pháp tên bô lệnh thay thế\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -934,12 +941,15 @@ msgid ""
 msgstr ""
 "\n"
 "Tính năng tiền xử lý:\n"
-"  -I, --include=THƯ_MỤC      tìm kiếm tập tin include (bao gồm) trong thư mục này thứ hai\n"
-"  -D, --define=TÊN[=TRỊ_SỐ]    nhập tên ấy có trị số ấy hay là trống (_định nghĩa_)\n"
-"  -U, --undefine=TÊN          xóa bỏ builtin (có sẵn) tên ấy (_bỏ định nghĩa_)\n"
+"  -I, --include=THƯ_MỤC      tìm kiếm tập tin include (bao gồm) trong thư "
+"mục này thứ hai\n"
+"  -D, --define=TÊN[=TRỊ_SỐ]    nhập tên ấy có trị số ấy hay là trống (_định "
+"nghĩa_)\n"
+"  -U, --undefine=TÊN          xóa bỏ builtin (có sẵn) tên ấy (_bỏ định "
+"nghĩa_)\n"
 "  -s, --synclines              tạo dòng loại `#line NO \"FILE\"'\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -950,11 +960,12 @@ msgid ""
 msgstr ""
 "\n"
 "Điều kiện giới hạn:\n"
-"  -G, --traditional            thu hồi tất cả trình mở rộng GNU (_truyền thống_)\n"
+"  -G, --traditional            thu hồi tất cả trình mở rộng GNU (_truyền "
+"thống_)\n"
 "  -H, --hashsize=SỐ_NGUYÊN_TỐ   lập _cỡ_ bảng _băm_ tra cứu ký hiệu\n"
 "  -L, --nesting-limit=SỐ  thay đổi _giới hạn lồng nhau_ nhân tạo\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -963,10 +974,12 @@ msgid ""
 msgstr ""
 "\n"
 "Tập tin tình trạng đông lạnh:\n"
-"  -F, --freeze-state=TẬP_TIN      _đông lạnh_ tập tin ấy khi xong (_tình trạng_)\n"
-"  -R, --reload-state=TẬP_TIN      _tải lại hình trạng_ đông lạnh từ tập tin ấy khi bắt đầu\n"
+"  -F, --freeze-state=TẬP_TIN      _đông lạnh_ tập tin ấy khi xong (_tình "
+"trạng_)\n"
+"  -R, --reload-state=TẬP_TIN      _tải lại hình trạng_ đông lạnh từ tập tin "
+"ấy khi bắt đầu\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -979,13 +992,15 @@ msgstr ""
 "\n"
 "Gỡ lỗi:\n"
 "  -d, --debug=[CỜ]         lập mức gỡ lỗi (khi không có cờ thì ngụ ý `aeq')\n"
-"  -t, --trace=TÊN            tìm thấy _dấu vết_ tên ấy khi nó sẽ được định nghĩa\n"
-"  -l, --arglength=SỐ      hạn chế cỡ bộ lệnh thay thế (macro) tìm thấy dấu vết\n"
+"  -t, --trace=TÊN            tìm thấy _dấu vết_ tên ấy khi nó sẽ được định "
+"nghĩa\n"
+"  -l, --arglength=SỐ      hạn chế cỡ bộ lệnh thay thế (macro) tìm thấy dấu "
+"vết\n"
 "(_độ dài đối số_)\n"
 "  -o, --error-output=TẬP_TIN          chuyển hướng _xuất_ dữ liệu gỡ _lỗi_\n"
 "và tìm thấy dấu vết\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -995,7 +1010,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1005,44 +1020,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "Không tán thành việc gọi như “egrep” nên thay thế bằng “grep -E”.\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "Cờ gỡ lỗi sai: `%s'"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "Không tán thành việc gọi như “egrep” nên thay thế bằng “grep -E”.\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1056,47 +1071,47 @@ msgstr "LỖI: gặp kêt thức tâp tin trong danh sách đối số"
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
 msgstr "LỖI: giới hạn %d bị vượt quá nên hãy sử dụng -L<N> để thay đổi nó"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "LỖI: không tạo được tập tin tạm thời đối với sự trệch đi"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "LỖI: không tạo được tập tin tạm thời đối với sự trệch đi"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "Không thể gọi tất cả thông tin về (stat) sự trệch đi"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "LỖI: không tạo được tập tin tạm thời đối với sự trệch đi"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "LỖI: không chuyển hết sự trệch đi ra vào tập tin tạm thời"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "LỖI: sao chép tập tin đã chèn"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "LỖI: đọc tập tin đã chèn"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "Không thể gọi tất cả thông tin về (stat) sự trệch đi"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "Sự trệch đi quá lớn"
@@ -1139,7 +1154,9 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "Chưa khớp ký tự [ hay [^"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in define_macro ()"
-#~ msgstr "LỖI NỘI BỘ: loại dữ liệu hiệu bài sai trong define_macro () (định nghĩa bộ lệnh thay thế)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: loại dữ liệu hiệu bài sai trong define_macro () (định nghĩa "
+#~ "bộ lệnh thay thế)"
 
 #~ msgid "Undefined name %s"
 #~ msgstr "Chưa định nghĩa tên %s"
@@ -1174,10 +1191,14 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "Biểu thức chính quy sai `%s': %s"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table! (trace_pre ())"
-#~ msgstr "LỖI NỘI BỘ: Chưa tìm builtin (có sẵn) trong bảng builtin. (trace_pre ()) (tìm thấy dấu vết trước)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: Chưa tìm builtin (có sẵn) trong bảng builtin. (trace_pre ()) "
+#~ "(tìm thấy dấu vết trước)"
 
 #~ msgid "INTERNAL ERROR: Bad token data type (trace_pre ())"
-#~ msgstr "LỖI NỘI BỘ: loại dữ liệu hiệu bài sai (trace_pre ()) (tìm thấy dấu vết trước)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: loại dữ liệu hiệu bài sai (trace_pre ()) (tìm thấy dấu vết "
+#~ "trước)"
 
 #~ msgid "INTERNAL ERROR: Bad error code in evaluate ()"
 #~ msgstr "LỖI NỘI BỘ: mã lỗi sai trong evaluate () "
@@ -1186,7 +1207,8 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "LỖI NỘI BỘ: toán tử so sánh sai trong cmp_term ()"
 
 #~ msgid "INTERNAL ERROR: Bad shift operator in shift_term ()"
-#~ msgstr "LỖI NỘI BỘ: toán tử sử dụng phím tăng tốc là sai trong shift_term ()"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: toán tử sử dụng phím tăng tốc là sai trong shift_term ()"
 
 #~ msgid "INTERNAL ERROR: Bad operator in mult_term ()"
 #~ msgstr "LỖI NỘI BỘ: toán tử sai trong mult_term ()"
@@ -1195,7 +1217,9 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "LỖI NỘI BỘ: chưa tìm built-in (có sẵn) trong bảng builtin"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in freeze_one_symbol ()"
-#~ msgstr "LỖI NỘI BỘ: loại dữ liệu hiệu bài sai trong freeze_one_symbol () (đông lạnh một ky tự)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: loại dữ liệu hiệu bài sai trong freeze_one_symbol () (đông "
+#~ "lạnh một ky tự)"
 
 #~ msgid "`%s' from frozen file not found in builtin table!"
 #~ msgstr "`%s' từ tập tin đông lạnh chưa được tìm trong bảng builtin (có sẵn)"
@@ -1210,13 +1234,18 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "LỖI NỘI BỘ: push-string (đẩy-chuỗi) đệ qui."
 
 #~ msgid "INTERNAL ERROR: Bad call to init_macro_token ()"
-#~ msgstr "LỖI NỘI BỘ: việc gọi sai đến init_macro_token () (hiệu bàì bộ lệnh thay thế)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: việc gọi sai đến init_macro_token () (hiệu bàì bộ lệnh thay "
+#~ "thế)"
 
 #~ msgid "INTERNAL ERROR: Input stack botch in next_char ()"
-#~ msgstr "LỖI NỘI BỘ: lỗi ngăn xếp nhập (input stack) trong next_char () (ký tự tới)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: lỗi ngăn xếp nhập (input stack) trong next_char () (ký tự tới)"
 
 #~ msgid "INTERNAL ERROR: Input stack botch in peek_input ()"
-#~ msgstr "LỖI NỘI BỘ: lỗi ngăn xếp nhập (input stack) trong peek_input () (hé nhìn nhâp)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: lỗi ngăn xếp nhập (input stack) trong peek_input () (hé nhìn "
+#~ "nhâp)"
 
 #~ msgid "NONE"
 #~ msgstr "Không có"
@@ -1225,7 +1254,8 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "LỖI: ngăn xếp bị tràn. (Đệ qui định nghĩa có vô hạn không?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1242,21 +1272,28 @@ msgstr "Sự trệch đi quá lớn"
 #~ "Chế độ thi hành:\n"
 #~ "      --help                   hiển thị _trợ giúp_ này rồi thoát\n"
 #~ "      --version                xuất thông tin _phiên bản_ rồi thoát\n"
-#~ "  -e, --interactive            trừ dữ liệu xuất ra bộ đệm, bỏ qua các lệnh ngắt (_tương tác_)\n"
-#~ "  -E, --fatal-warnings         thôi thi hành sau khi gặp _cảnh báo_ thứ nhất (_nghiêm trọng_)\n"
-#~ "  -Q, --quiet, --silent        thu hồi một phần cảnh báo đối với builtin (có sẵn) (_im_)\n"
-#~ "  -P, --prefix-builtins        buộc _tiền tố_ `m4_' đối với tất cả builtin (có sẵn)\n"
+#~ "  -e, --interactive            trừ dữ liệu xuất ra bộ đệm, bỏ qua các "
+#~ "lệnh ngắt (_tương tác_)\n"
+#~ "  -E, --fatal-warnings         thôi thi hành sau khi gặp _cảnh báo_ thứ "
+#~ "nhất (_nghiêm trọng_)\n"
+#~ "  -Q, --quiet, --silent        thu hồi một phần cảnh báo đối với builtin "
+#~ "(có sẵn) (_im_)\n"
+#~ "  -P, --prefix-builtins        buộc _tiền tố_ `m4_' đối với tất cả "
+#~ "builtin (có sẵn)\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Tính năng tải động:\n"
-#~ "  -m, --module-directory=THƯ_MỤC  thêm thư mục ấy vào đường dẫn tìm kiếm mô-đun\n"
-#~ "  -M, --load-module=MÔ-ĐUN          tải mô-đun động từ dường dẫn M4MODPATH\n"
+#~ "  -m, --module-directory=THƯ_MỤC  thêm thư mục ấy vào đường dẫn tìm kiếm "
+#~ "mô-đun\n"
+#~ "  -M, --load-module=MÔ-ĐUN          tải mô-đun động từ dường dẫn "
+#~ "M4MODPATH\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1280,7 +1317,8 @@ msgstr "Sự trệch đi quá lớn"
 #~ "  a   hiển thị tất cả đối số thật\n"
 #~ "  e   hiển thị dạng mở rộng\n"
 #~ "  q   hiển thị trị số khi cần đến, với cờ a hay e\n"
-#~ "  c   hiển thị trước khi tập hợp (collect), sau khi tập hợp và sau khi gọi\n"
+#~ "  c   hiển thị trước khi tập hợp (collect), sau khi tập hợp và sau khi "
+#~ "gọi\n"
 #~ "  x   thêm điều nhận biết việc gọi bô lệnh thay thế (macro) độc nhất,\n"
 #~ "có ích với cờ c\n"
 #~ "  f   nói tên tập tin nhập hiện\n"
@@ -1309,13 +1347,16 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr "LỖI NỘI BỘ: mã sai trong đối số trì hoãn"
 
 #~ msgid "INTERNAL ERROR: Bad token type in expand_token ()"
-#~ msgstr "LỖI NỘI BỘ: loại hiệu bài sai trong expand_token () (mở rộng hiệu bài)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: loại hiệu bài sai trong expand_token () (mở rộng hiệu bài)"
 
 #~ msgid "INTERNAL ERROR: Bad token type in expand_argument ()"
-#~ msgstr "LỖI NỘI BỘ: loại hiệu bài sai trong expand_argument () (mở rộng đối số)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: loại hiệu bài sai trong expand_argument () (mở rộng đối số)"
 
 #~ msgid "INTERNAL ERROR: Bad symbol type in call_macro ()"
-#~ msgstr "LỖI NỘI BỘ: loại ký hiệu sai trong call_macro () (gọi bộ lệnh thay thế)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: loại ký hiệu sai trong call_macro () (gọi bộ lệnh thay thế)"
 
 #~ msgid "ERROR: failed to initialise modules: %s"
 #~ msgstr "LỖI: không khởi động mô-đun được: %s"
@@ -1363,7 +1404,9 @@ msgstr "Sự trệch đi quá lớn"
 #~ msgstr ".  Kiểm tra đệ qui vô hạn có thê.\n"
 
 #~ msgid "INTERNAL ERROR: Illegal mode to symbol_lookup ()"
-#~ msgstr "LỖI NỘI BỘ: không cho phép chế độ đối với symbol_lookup () (tra cứu ký hiệu)"
+#~ msgstr ""
+#~ "LỖI NỘI BỘ: không cho phép chế độ đối với symbol_lookup () (tra cứu ký "
+#~ "hiệu)"
 
 #~ msgid "Name `%s' is unknown\n"
 #~ msgstr "Chưa biết tên `%s'\n"

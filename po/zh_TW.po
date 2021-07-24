@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2013-02-12 23:05+0800\n"
 "Last-Translator: Wei-Lun Chao <bluebat@member.fsf.org>\n"
 "Language-Team: Chinese (traditional) <zh-l10n@linux.org.tw>\n"
@@ -42,11 +42,11 @@ msgstr "正在關閉輸出檔案的時候發生錯誤"
 msgid "write error"
 msgstr "寫入發生錯誤"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "程式錯誤"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "堆疊超出容量"
 
@@ -100,7 +100,7 @@ msgstr "%s: 無效的選項 -- \"%c\"\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: 選項需要一個引數 -- \"%c\"\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "記憶體耗盡"
 
@@ -658,7 +658,7 @@ msgstr "無法反向轉移「%s」"
 msgid "cannot undivert `%s'"
 msgstr "無法反向轉移「%s」"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "無法開啟 `%s'"
@@ -682,7 +682,7 @@ msgstr "UT 位移超出範圍"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "除錯模式：不當的除錯旗標：「%s」"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "無法開啟輸入檔 `%s'"
@@ -866,17 +866,17 @@ msgstr "錯誤：字串中有檔尾字元 (EOF)"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "請嘗試執行「%s --help」來獲取更多資訊。\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "用法：%s [選項]… [檔案]…\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
@@ -885,21 +885,21 @@ msgstr ""
 "\n"
 "如果沒有指定 FILE 或 FILE 是 -，則由標準輸入讀取資料。\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
 msgstr "長選項所使用的參數，在相對應的短選項也必須使用。"
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -908,7 +908,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -916,11 +916,11 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr "  -W, --word-regexp=REGEXP     使用 REGEXP 做為巨集名稱語法\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -936,7 +936,7 @@ msgstr ""
 "  -U, --undefine=NAME          刪除內建的 NAME\n"
 "  -s, --synclines              產生「#line NO \"FILE\"」的列\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -951,7 +951,7 @@ msgstr ""
 "  -H, --hashsize=PRIME         設定符號查找雜湊表大小\n"
 "  -L, --nesting-limit=NUMBER   改變人造巢狀迴圈限制\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -963,7 +963,7 @@ msgstr ""
 "  -F, --freeze-state=FILE      結束時於 FILE 產生凍結狀態\n"
 "  -R, --reload-state=FILE      開始時從 FILE 重新載入凍結狀態\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -980,7 +980,7 @@ msgstr ""
 "  -l, --arglength=NUM          限定巨集追蹤大小\n"
 "  -o, --error-output=FILE      重新導向除錯與追蹤的輸出\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -990,7 +990,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1000,44 +1000,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "\"egrep\" 的呼叫方式已被廢除; 請用 \"grep -E\" 代替。\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "不當的除錯旗標：「%s」"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "\"egrep\" 的呼叫方式已被廢除; 請用 \"grep -E\" 代替。\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1051,47 +1051,47 @@ msgstr "錯誤：引數串列中出現檔案結尾(EOF)"
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
 msgstr "錯誤：超出 %d 的遞迴限制，使用 -L<N> 來修正它"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "錯誤：無法建立轉移用的暫時檔案"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "錯誤：無法建立轉移用的暫時檔案"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "無法顯示轉移狀態"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "錯誤：無法建立轉移用的暫時檔案"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "錯誤：無法清空轉移資料至暫時檔案"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "錯誤：複製已插入的檔案"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "錯誤：讀取已插入的檔案"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "無法顯示轉移狀態"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "轉移資料太大"
@@ -1220,7 +1220,8 @@ msgstr "轉移資料太大"
 #~ msgstr "錯誤：堆疊溢位。(無限的定義迴圈？)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1231,7 +1232,8 @@ msgstr "轉移資料太大"
 #~ "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 #~ "  -P, --prefix-builtins        force a `m4_' prefix to all builtins\n"
 #~ msgstr ""
-#~ "對於長選項是必要的或是選擇性的引數，也同樣對於短選項是必要的或是選擇性的。\n"
+#~ "對於長選項是必要的或是選擇性的引數，也同樣對於短選項是必要的或是選擇性"
+#~ "的。\n"
 #~ "\n"
 #~ "作業模式:\n"
 #~ "      --help                   顯示此輔助訊息並離開\n"
@@ -1244,7 +1246,8 @@ msgstr "轉移資料太大"
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
@@ -1347,7 +1350,8 @@ msgstr "轉移資料太大"
 #~ msgid ""
 #~ "Memory bounds violation detected (SIGSEGV).  Either a stack overflow\n"
 #~ "occurred, or there is a bug in "
-#~ msgstr "偵測到違反記憶體邊界 (SIGSEGV)。可能是發生堆疊溢出，或是有程式錯誤於 "
+#~ msgstr ""
+#~ "偵測到違反記憶體邊界 (SIGSEGV)。可能是發生堆疊溢出，或是有程式錯誤於 "
 
 #~ msgid ".  Check for possible infinite recursion.\n"
 #~ msgstr "。檢查是否有可能的無限迴圈。\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4.18d\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2021-05-30 08:54+0200\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@ludost.net>\n"
@@ -20,7 +20,9 @@ msgstr ""
 #: lib/clean-temp.c:235
 #, c-format
 msgid "cannot find a temporary directory, try setting $TMPDIR"
-msgstr "липсва временна директория, пробвайте да укажете такава в променливата „TMPDIR“"
+msgstr ""
+"липсва временна директория, пробвайте да укажете такава в променливата "
+"„TMPDIR“"
 
 #: lib/clean-temp.c:250
 #, c-format
@@ -40,11 +42,11 @@ msgstr "грешка при затваряне на файл"
 msgid "write error"
 msgstr "грешка при запис"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "програмна грешка"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "препълване на стека"
 
@@ -98,7 +100,7 @@ msgstr "%s: неправилна опция — „%c“\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: опцията изисква аргумент — „%c“\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "паметта е изчерпана"
 
@@ -120,7 +122,9 @@ msgstr "неуспешно изпълнение на „_open_osfhandle“"
 #: lib/os2-spawn.c:83
 #, c-format
 msgid "cannot restore fd %d: dup2 failed"
-msgstr "файловият дескриптор %d не може да се възстанови: неуспешно изпълнение на функцията „dup2“"
+msgstr ""
+"файловият дескриптор %d не може да се възстанови: неуспешно изпълнение на "
+"функцията „dup2“"
 
 #. TRANSLATORS:
 #. Get translations for open and closing quotation marks.
@@ -405,10 +409,13 @@ msgid ""
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 msgstr ""
-"Лиценз — Общ публичен лиценз на GNU (GNU GPL), както е публикуван от Фондацията\n"
-"за свободен софтуер — версия 3 на лиценза или (по ваше решение) по-късна версия.\n"
+"Лиценз — Общ публичен лиценз на GNU (GNU GPL), както е публикуван от "
+"Фондацията\n"
+"за свободен софтуер — версия 3 на лиценза или (по ваше решение) по-късна "
+"версия.\n"
 "<%s>\n"
-"Тази програма е свободен софтуер. Можете да я разпространявате и/или променяте.\n"
+"Тази програма е свободен софтуер. Можете да я разпространявате и/или "
+"променяте.\n"
 "Тя се разпространява БЕЗ НИКАКВИ ГАРАНЦИИ доколкото е позволено от закона.\n"
 
 #. TRANSLATORS: %s denotes an author name.
@@ -583,7 +590,8 @@ msgstr "ПРЕДУПРЕЖДЕНИЕ: прекалено малко аргуме
 #: src/builtin.c:394
 #, c-format
 msgid "Warning: excess arguments to builtin `%s' ignored"
-msgstr "ПРЕДУПРЕЖДЕНИЕ: излишните аргументи към вградената команда „%s“ се прескачат"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: излишните аргументи към вградената команда „%s“ се прескачат"
 
 #: src/builtin.c:415 src/builtin.c:1114
 #, c-format
@@ -659,7 +667,7 @@ msgstr "грешка при прекратяване на отвеждането
 msgid "cannot undivert `%s'"
 msgstr "отвеждането на „%s“ не може да се прекрати"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "„%s“ не може да се отвори"
@@ -683,7 +691,7 @@ msgstr "изходният код е извън диапазона: %d"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "Изчистване на грешки: неправилни флагове: „%s“"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, c-format
 msgid "cannot set debug file `%s'"
 msgstr "файлът за изчистване на грешки не може да се отвори: „%s“"
@@ -856,33 +864,35 @@ msgstr "ГРЕШКА: край на файл в низ"
 msgid "Rene' Seindal"
 msgstr "René Seindal"
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, c-format
 msgid "Try `%s --help' for more information."
 msgstr "За повече информация изпълнете „%s --help“."
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Употреба: %s [ОПЦИЯ]… [ФАЙЛ]…\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
 "is read.\n"
 msgstr ""
-"Обработка на макросите от тези ФАЙЛове.  Ако ФАЙЛ няма или е „-“, се чете от\n"
+"Обработка на макросите от тези ФАЙЛове.  Ако ФАЙЛ няма или е „-“, се чете "
+"от\n"
 "стандартния вход.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
 msgstr ""
-"Аргументите, които са задължителни за дългите опции, са задължителни и за късите\n"
+"Аргументите, които са задължителни за дългите опции, са задължителни и за "
+"късите\n"
 "варианти.\n"
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
@@ -892,7 +902,7 @@ msgstr ""
 "      --help               извеждане на тази помощ и изход\n"
 "      --version            извеждане на информация за версията и изход\n"
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -905,10 +915,12 @@ msgstr ""
 "                           първото предупреждение\n"
 "  -i, --interactive        без буфериране на изхода, пренебрегване\n"
 "                           на прекъсванията\n"
-"  -P, --prefix-builtins    добавяне на префикс `m4_' към всички вградени команди\n"
-"  -Q, --quiet, --silent    без някои от предупрежденията за вградените команди\n"
+"  -P, --prefix-builtins    добавяне на префикс `m4_' към всички вградени "
+"команди\n"
+"  -Q, --quiet, --silent    без някои от предупрежденията за вградените "
+"команди\n"
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -916,16 +928,18 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 "      --warn-macro-sequence[=РЕГ_ИЗР]\n"
-"                           предупреждение, ако дефиницията на макрос напасва с\n"
+"                           предупреждение, ако дефиницията на макрос напасва "
+"с\n"
 "                           този РЕГулярен_ИЗРаз.  Стандартно: %s\n"
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr ""
-"  -W, --word-regexp=Р_ИЗР  използване на този Регулярен_ИЗРаз за синтаксиса на\n"
+"  -W, --word-regexp=Р_ИЗР  използване на този Регулярен_ИЗРаз за синтаксиса "
+"на\n"
 "                           името на макроса\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 msgid ""
 "Preprocessor features:\n"
 "  -D, --define=NAME[=VALUE]    define NAME as having VALUE, or empty\n"
@@ -943,7 +957,7 @@ msgstr ""
 "  -s, --synclines          генериране на редове „#line № \"FILE\"“\n"
 "  -U, --undefine=ИМЕ       изтриване на вграденото ИМЕ\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, c-format
 msgid ""
 "Limits control:\n"
@@ -953,15 +967,17 @@ msgid ""
 "  -L, --nesting-limit=NUMBER   change nesting limit, 0 for unlimited [%d]\n"
 msgstr ""
 "Ограничаване:\n"
-"  -g, --gnu                наново включване на разширенията на GNU (с превес\n"
+"  -g, --gnu                наново включване на разширенията на GNU (с "
+"превес\n"
 "                           над „-G“)\n"
 "  -G, --traditional        изключване на всички разширения на GNU\n"
 "  -H, --hashsize=РАЗМЕР    РАЗМЕР на речника за символи (стандартно е 509)\n"
 "  -L, --nesting-limit=ЧИСЛО\n"
-"                           смяна на ограничението за влагане до това ЧИСЛО пъти,\n"
+"                           смяна на ограничението за влагане до това ЧИСЛО "
+"пъти,\n"
 "                           0 — ограничението се изключва (%d)\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 msgid ""
 "Frozen state files:\n"
 "  -F, --freeze-state=FILE      produce a frozen state on FILE at end\n"
@@ -973,7 +989,7 @@ msgstr ""
 "  -R, --reload-state=ФАЙЛ  изчитане на състоянието от замразен ФАЙЛ\n"
 "                           в началото на работата\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 msgid ""
 "Debugging:\n"
 "  -d, --debug[=FLAGS]          set debug level (no FLAGS implies `aeq')\n"
@@ -983,15 +999,19 @@ msgid ""
 "  -t, --trace=NAME             trace NAME when it is defined\n"
 msgstr ""
 "Изчистване на грешки:\n"
-"  -d, --debug=[ФЛАГОВЕ]    ниво за изчистване на грешки, без флагове е „aeq“\n"
-"      --debugfile[=ФАЙЛ]   извеждане на информацията за изчистване на грешки в\n"
-"                           този ФАЙЛ (обичайно е стандартната грешка, прескача\n"
+"  -d, --debug=[ФЛАГОВЕ]    ниво за изчистване на грешки, без флагове е "
+"„aeq“\n"
+"      --debugfile[=ФАЙЛ]   извеждане на информацията за изчистване на грешки "
+"в\n"
+"                           този ФАЙЛ (обичайно е стандартната грешка, "
+"прескача\n"
 "                           се при празен аргумент)\n"
-"  -l, --arglength=РАЗМЕР   ограничаване на размера за изчистване на грешки на\n"
+"  -l, --arglength=РАЗМЕР   ограничаване на размера за изчистване на грешки "
+"на\n"
 "                           макроси\n"
 "  -t, --trace=ИМЕ          трасиране на ИМЕто при дефинирането му\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -1007,7 +1027,7 @@ msgstr ""
 "  f   извеждане на текущия входен файл\n"
 "  i   промените във входните файлове\n"
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1023,7 +1043,7 @@ msgstr ""
 "  x   уникален идентификатор при извикване на макрос, полезно при флаг „c“\n"
 "  V   всичко по-горе\n"
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
@@ -1031,7 +1051,7 @@ msgstr ""
 "Ако е дефинирана, променливата на средата „M4PATH“ е списък от директории,\n"
 "разделени с „:“, които се добавят след директориите зададени с опция „-I“.\n"
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
@@ -1039,32 +1059,32 @@ msgstr ""
 "Изходният код е 0 при успех, 1 при грешка, 63 при неочаквана версия на\n"
 "замразения файл или стойността подадена на макроса за изход „m4exit“.\n"
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr "засечена е вътрешна грешка, молим — докладвайте я на адрес: <%s>"
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: опцията „m4 -%c“ може да бъде махната в бъдеща версия"
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: опцията „m4 -%s“ е остаряла"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, c-format
 msgid "bad debug flags: `%s'"
 msgstr "неправилни флагове за изчистване на грешки: „%s“"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: опцията „m4 -e“ е остаряла, ползвайте „m4 -i“"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr "стандартна грешка"
 
@@ -1075,40 +1095,43 @@ msgstr "ГРЕШКА: край на файл в списък с аргумент
 #: src/macro.c:332
 #, c-format
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
-msgstr "преминато е ограничението за рекурсия до %d пъти.  Може да го промените с „-L<N>“"
+msgstr ""
+"преминато е ограничението за рекурсия до %d пъти.  Може да го промените с „-"
+"L<N>“"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 msgid "cannot clean temporary file for diversion"
 msgstr "не може да се създаде временен файл за отвеждане"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 msgid "cannot create temporary file for diversion"
 msgstr "не може да се създаде временен файл за отвеждане"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 msgid "cannot seek within diversion"
 msgstr "не може да се получи търси със „seek“ в отвеждането"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 msgid "cannot close temporary file for diversion"
 msgstr "не може да се затвори временен файл за отвеждане"
 
-#: src/output.c:474
+#: src/output.c:478
 msgid "ERROR: cannot flush diversion to temporary file"
-msgstr "ГРЕШКА: буферите за отвеждането във временен файл не може да се изчистят"
+msgstr ""
+"ГРЕШКА: буферите за отвеждането във временен файл не може да се изчистят"
 
-#: src/output.c:568
+#: src/output.c:572
 msgid "ERROR: copying inserted file"
 msgstr "ГРЕШКА: копиране на вмъкнат файл"
 
-#: src/output.c:816
+#: src/output.c:820
 msgid "error reading inserted file"
 msgstr "грешка при четене на вмъкнат файл"
 
-#: src/output.c:983
+#: src/output.c:987
 msgid "cannot stat diversion"
 msgstr "не може да се получи информация със „stat“ за отвеждането"
 
-#: src/output.c:987
+#: src/output.c:991
 msgid "diversion too large"
 msgstr "отвеждането е твърде дълго"

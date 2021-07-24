@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4.18d\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2021-05-13 15:07-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
@@ -44,11 +44,11 @@ msgstr "关闭文件出错"
 msgid "write error"
 msgstr "写错误"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "程序错误"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "栈溢出"
 
@@ -102,7 +102,7 @@ msgstr "%s：无效选项 -- “%c”\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s：选项需要一个参数 -- “%c”\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "内存耗尽"
 
@@ -659,7 +659,7 @@ msgstr "无法反转换 %s"
 msgid "cannot undivert `%s'"
 msgstr "无法反转换 %s"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "无法打开“%s”"
@@ -683,7 +683,7 @@ msgstr "退出状态码超出范围：“%d”"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "调试模式：错误的调试标志：“%s”"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, c-format
 msgid "cannot set debug file `%s'"
 msgstr "无法设置调试文件“%s”"
@@ -863,17 +863,17 @@ msgstr "错误：字符串中的 EOF"
 msgid "Rene' Seindal"
 msgstr "Rene' Seindal"
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, c-format
 msgid "Try `%s --help' for more information."
 msgstr "尝试使用“%s --help”以获取更多信息。"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "用法：%s [选项]... [文件]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
 "is read.\n"
@@ -881,13 +881,13 @@ msgstr ""
 "处理给定文件中的宏。如果未给定文件列表或“文件”为“-”，\n"
 "则从标准输入中读取。\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
 msgstr "长选项的强制或可选参数对对应的短选项也是强制或可选的。\n"
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
@@ -897,7 +897,7 @@ msgstr ""
 "      --help                   显示本帮助信息并退出\n"
 "      --version                输出版本信息并退出。\n"
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -906,7 +906,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -914,11 +914,11 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr "  -W, --word-regexp=正规表达式      将“正规表达式”作为宏名的语法\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -934,7 +934,7 @@ msgstr ""
 "  -U, --undefine=名字          删除内置宏“名字”\n"
 "  -s, --synclines              生成 “#line NO \"FILE\"” 行\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -949,7 +949,7 @@ msgstr ""
 "  -H, --hashsize=PRIME         设置符号搜索杂凑表的大小\n"
 "  -L, --nesting-limit=NUMBER   改变手工嵌套限制\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -961,7 +961,7 @@ msgstr ""
 "  -F, --freeze-state=文件      在结束时在“文件”中生成冻结状态\n"
 "  -R, --reload-state=文件      在启动是从“文件”中重新装入冻结状态\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -978,7 +978,7 @@ msgstr ""
 "  -l, --arglength=长度         限止宏跟踪大小\n"
 "  -o, --error-output=文件      重定向调试和跟踪输出\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -988,7 +988,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -998,44 +998,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr "探测到内部错误：请将本问题报告至 <%s>"
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr "警告：“m4 -%c”可能在未来的版本中移除"
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "警告：“m4 %s”已弃用"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, c-format
 msgid "bad debug flags: `%s'"
 msgstr "错误的调试标志：“%s”"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "警告：“m4 -e”已弃用，请使用“-i”作为替代"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1048,45 +1048,45 @@ msgstr "错误：参数列表中出现 EOF"
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
 msgstr "错误：超出递归上限 %d，使用 -L<N> 以改变此上限"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "错误：无法为转换创建临时文件"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "错误：无法为转换创建临时文件"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "无法获取转换的状态"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "错误：无法为转换创建临时文件"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "错误：无法将转换刷新到临时文件"
 
-#: src/output.c:568
+#: src/output.c:572
 msgid "ERROR: copying inserted file"
 msgstr "错误：复制已插入的文件"
 
-#: src/output.c:816
+#: src/output.c:820
 msgid "error reading inserted file"
 msgstr "读取已插入的文件出错"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "无法获取转换的状态"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "转换过大"
@@ -1215,7 +1215,8 @@ msgstr "转换过大"
 #~ msgstr "错误：栈溢出。(无穷的定义递归？)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1239,7 +1240,8 @@ msgstr "转换过大"
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"

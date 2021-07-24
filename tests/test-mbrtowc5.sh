@@ -1,1 +1,6 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-mbrtowc5.sh
+#!/bin/sh
+# Test whether the POSIX locale has encoding errors.
+LC_ALL=C \
+${CHECKER} ./test-mbrtowc${EXEEXT} 5 || exit
+LC_ALL=POSIX \
+${CHECKER} ./test-mbrtowc${EXEEXT} 5

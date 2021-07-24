@@ -89,7 +89,7 @@
 : ${CONFIG_SHELL="/bin/sh"}
 : ${DIFF="diff"}
 : ${GIT="git"}
-: ${LN_S="ln -s"}
+: ${LN_S="cp"}
 : ${RM="rm"}
 
 export ACLOCAL
@@ -484,7 +484,7 @@ test -z "$GREP" && {
 : ${ECHO="printf %s\n"}
 : ${EGREP="$GREP -E"}
 : ${FGREP="$GREP -F"}
-: ${LN_S="ln -s"}
+: ${LN_S="cp"}
 : ${MAKE="make"}
 : ${MKDIR="mkdir"}
 : ${MV="mv -f"}

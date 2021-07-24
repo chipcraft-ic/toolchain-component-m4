@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2012-11-10 19:02+0100\n"
 "Last-Translator: Leandro Regueiro <leandro.regueiro@gmail.com>\n"
 "Language-Team: Galician <proxecto@trasno.net>\n"
@@ -48,11 +48,11 @@ msgstr "erro ao pecha-lo ficheiro de saída"
 msgid "write error"
 msgstr "erro de escritura"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "erro de programa"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "desbordamento de pila"
 
@@ -106,7 +106,7 @@ msgstr "%s: a opción -- '%c' non é correcta\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: a opción require un argumento -- '%c'\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "memoria esgotada"
 
@@ -664,7 +664,7 @@ msgstr "Non é posíbel endereitar %s"
 msgid "cannot undivert `%s'"
 msgstr "Non é posíbel endereitar %s"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "non se pode abrir `%s'"
@@ -688,7 +688,7 @@ msgstr "Resultado numérico fóra de rango"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "Modo de depuración: modificadores de depuración incorrectos: «%s»"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "non se pode abri-lo ficheiro de entrada `%s'"
@@ -872,40 +872,43 @@ msgstr "ERRO: fin de ficheiro na cadea"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "Escriba «%s --help» para obter máis información.\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Uso: %s [OPCIÓN]... [FICHEIRO]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
 "is read.\n"
 msgstr ""
 "\n"
-"Se non se indica un FICHEIRO ou se o FICHEIRO é «-», lese da entrada estándar.\n"
+"Se non se indica un FICHEIRO ou se o FICHEIRO é «-», lese da entrada "
+"estándar.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
-msgstr "Os parámetros obrigatorios ou opcionais das opcións longas son tamén obrigatorios ou opcionais para calquera opción curta que se corresponda."
+msgstr ""
+"Os parámetros obrigatorios ou opcionais das opcións longas son tamén "
+"obrigatorios ou opcionais para calquera opción curta que se corresponda."
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -914,7 +917,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -922,11 +925,13 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
-msgstr "  -W, --word-regexp=REGEXP     usar REGEXP para a sintaxe dos nomes das macros\n"
+msgstr ""
+"  -W, --word-regexp=REGEXP     usar REGEXP para a sintaxe dos nomes das "
+"macros\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -939,11 +944,12 @@ msgstr ""
 "Características do preprocesador:\n"
 "  -I, --include=DIRECTORIO     buscar tamén neste directorio por ficheiros\n"
 "                                 a incluír\n"
-"  -D, --define=NOME[=VALOR]    introducir o NOME que contén o VALOR, ou baleiro\n"
+"  -D, --define=NOME[=VALOR]    introducir o NOME que contén o VALOR, ou "
+"baleiro\n"
 "  -U, --undefine=NOME          eliminar a predefinida NOME\n"
 "  -s, --synclines              xerar liñas `#line NÚM \"FICHEIRO\"\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -958,7 +964,7 @@ msgstr ""
 "  -H, --hashsize=PRIMO         definir o tamaño da táboa hash de símbolos\n"
 "  -L, --nesting-limit=NÚMERO   cambiar o límite artificial de aniñamento\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -967,11 +973,13 @@ msgid ""
 msgstr ""
 "\n"
 "Ficheiros de estado conxelado:\n"
-"  -F, --freeze-state=FICHEIRO  producir un estado conxelado á fin do FICHEIRO\n"
-"  -R, --reload-state=FICHEIRO  cargar un estado conxelado desde o principio do\n"
+"  -F, --freeze-state=FICHEIRO  producir un estado conxelado á fin do "
+"FICHEIRO\n"
+"  -R, --reload-state=FICHEIRO  cargar un estado conxelado desde o principio "
+"do\n"
 "                                 FICHEIRO\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -989,7 +997,7 @@ msgstr ""
 "  -l, --arglength=NÚM          restrinxir o tamaño do seguimento das macros\n"
 "  -o, --error-output=FICHEIRO  redirixir a saída de depuración e seguemento\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -999,7 +1007,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1009,44 +1017,46 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
-msgstr "A invocación como `egrep' está obsoleta; utilice `grep -E' no seu lugar.\n"
+msgstr ""
+"A invocación como `egrep' está obsoleta; utilice `grep -E' no seu lugar.\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "Opcións de depuración incorrectas: «%s»"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
-msgstr "A invocación como `egrep' está obsoleta; utilice `grep -E' no seu lugar.\n"
+msgstr ""
+"A invocación como `egrep' está obsoleta; utilice `grep -E' no seu lugar.\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1058,49 +1068,50 @@ msgstr "ERRO: Fin de ficheiro na lista de parámetros"
 #: src/macro.c:332
 #, fuzzy, c-format
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
-msgstr "ERRO: Límite de %d recursións sobrepasado, empregue -L<N> para cambialo"
+msgstr ""
+"ERRO: Límite de %d recursións sobrepasado, empregue -L<N> para cambialo"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "ERRO: Non foi posíbel crear un ficheiro temporal para o desvío"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "ERRO: Non foi posíbel crear un ficheiro temporal para o desvío"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "Non foi posíbel facer unha operación de stat sobre un desvío"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "ERRO: Non foi posíbel crear un ficheiro temporal para o desvío"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "ERRO: Non foi posíbel establecer o desvío a un ficheiro temporal"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "ERRO: Copiando o ficheiro insertado"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "ERRO: Lendo o ficheiro insertado"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "Non foi posíbel facer unha operación de stat sobre un desvío"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "Desvío grande de máis"
@@ -1143,7 +1154,8 @@ msgstr "Desvío grande de máis"
 #~ msgstr "[ ou [^ non emparellado"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in define_macro ()"
-#~ msgstr "ERRO INTERNO: Tipo de dato incorrecto no elemento en define_macro ()"
+#~ msgstr ""
+#~ "ERRO INTERNO: Tipo de dato incorrecto no elemento en define_macro ()"
 
 #~ msgid "Undefined name %s"
 #~ msgstr "Nome %s non definido"
@@ -1178,7 +1190,9 @@ msgstr "Desvío grande de máis"
 #~ msgstr "Expresión regular «%s» incorrecta: %s"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table! (trace_pre ())"
-#~ msgstr "ERRO INTERNO: Predefinida non atopada na táboa de predefinidas! (trace_pre ())"
+#~ msgstr ""
+#~ "ERRO INTERNO: Predefinida non atopada na táboa de predefinidas! "
+#~ "(trace_pre ())"
 
 #~ msgid "INTERNAL ERROR: Bad token data type (trace_pre ())"
 #~ msgstr "ERRO INTERNO: Tipo de dato incorrecto no elemento (trace_pre ())"
@@ -1199,7 +1213,8 @@ msgstr "Desvío grande de máis"
 #~ msgstr "ERRO INTERNO: Predefinida non atopada na táboa de predefinidas!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in freeze_one_symbol ()"
-#~ msgstr "ERRO INTERNO: Tipo de dato incorrecto no elemento en freeze_one_symbol ()"
+#~ msgstr ""
+#~ "ERRO INTERNO: Tipo de dato incorrecto no elemento en freeze_one_symbol ()"
 
 #~ msgid "`%s' from frozen file not found in builtin table!"
 #~ msgstr "«%s» do ficheiro conxelado non se atopou na táboa de predefinidas!"
@@ -1229,7 +1244,8 @@ msgstr "Desvío grande de máis"
 #~ msgstr "ERRO: Desbordamento da pila. (Recursión infinita de defines?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1245,24 +1261,29 @@ msgstr "Desvío grande de máis"
 #~ "\n"
 #~ "Modos de funcionamento:\n"
 #~ "      --help                   mostrar esta axuda e saír\n"
-#~ "      --version                mostrar información sobre a versión e saír\n"
+#~ "      --version                mostrar información sobre a versión e "
+#~ "saír\n"
 #~ "  -e, --interactive            non usar un búfer de saída, ignorar as\n"
 #~ "                                 interrupcións\n"
 #~ "  -E, --fatal-warnings         deter a execución tralo primeiro aviso\n"
 #~ "  -Q, --quiet, --silent        suprimir algúns avisos das predefinidas\n"
-#~ "  -P, --prefix-builtins        forzar un prefixo `m4_' en todas as predefinidas\n"
+#~ "  -P, --prefix-builtins        forzar un prefixo `m4_' en todas as "
+#~ "predefinidas\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Características de carga dinámica:\n"
-#~ "  -m, --module-directory=DIRECTORIO  engadir o DIRECTORIO á ruta de busca\n"
+#~ "  -m, --module-directory=DIRECTORIO  engadir o DIRECTORIO á ruta de "
+#~ "busca\n"
 #~ "                                        de módulos\n"
-#~ "  -M, --load-module=MÓDULO           cargar o MÓDULO dinámico de M4MODPATH\n"
+#~ "  -M, --load-module=MÓDULO           cargar o MÓDULO dinámico de "
+#~ "M4MODPATH\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1281,12 +1302,15 @@ msgstr "Desvío grande de máis"
 #~ msgstr ""
 #~ "\n"
 #~ "OPCIÓNS é unha de:\n"
-#~ "  t   seguimento de toda as chamadas a macros, non só nas que teñen traceon\n"
+#~ "  t   seguimento de toda as chamadas a macros, non só nas que teñen "
+#~ "traceon\n"
 #~ "  a   mostrar os parámetros\n"
 #~ "  e   mostrar a expansión\n"
 #~ "  q   citar os valores cando sexa preciso, coas opcións a ou e\n"
-#~ "  c   mostrar antes da obtención, despois da obtención e despois da chamada\n"
-#~ "  x   engadir un identificador único de chamada á macro, útil coa opción c\n"
+#~ "  c   mostrar antes da obtención, despois da obtención e despois da "
+#~ "chamada\n"
+#~ "  x   engadir un identificador único de chamada á macro, útil coa opción "
+#~ "c\n"
 #~ "  f   dicir o nome do ficheiro de entrada actual\n"
 #~ "  l   dicir o número da liña de entrada actual\n"
 #~ "  p   mostrar os resultados das buscas nas rutas\n"

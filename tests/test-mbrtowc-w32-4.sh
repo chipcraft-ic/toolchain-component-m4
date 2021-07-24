@@ -1,1 +1,4 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-mbrtowc-w32-4.sh
+#!/bin/sh
+
+# Test a CP950 locale.
+${CHECKER} ./test-mbrtowc-w32${EXEEXT} Chinese_Taiwan 950

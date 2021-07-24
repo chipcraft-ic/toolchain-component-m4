@@ -1,1 +1,4 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/executable-script.sh
+printf 'Halle '
+printf "Potta"
+# This script is intentionally not immediately recognizable as a shell script.
+# Don't add a #! header in the first line.

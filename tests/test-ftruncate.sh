@@ -1,1 +1,3 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-ftruncate.sh
+#!/bin/sh
+
+exec ${CHECKER} ./test-ftruncate${EXEEXT} "$srcdir/test-ftruncate.sh"

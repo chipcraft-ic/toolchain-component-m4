@@ -1,1 +1,3 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-posix_spawn-dup2-stdin.in.sh
+#!/bin/sh
+read line
+test "$line" = "Halle Potta"

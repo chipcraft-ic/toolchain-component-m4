@@ -1,1 +1,3 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-fseek2.sh
+#!/bin/sh
+
+exec ${CHECKER} ./test-fseek${EXEEXT} 1 2 < "$srcdir/test-fseek2.sh"

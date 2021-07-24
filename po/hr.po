@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2012-09-28 15:54+0200\n"
 "Last-Translator: Tomislav Krznar <tomislav.krznar@gmail.com>\n"
 "Language-Team: Croatian <lokalizacija@linux.hr>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8-bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.4\n"
 
 #: lib/clean-temp.c:235
@@ -43,11 +44,11 @@ msgstr "greška pri zatvaranju izlazne datoteke"
 msgid "write error"
 msgstr "greška pri pisanju"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "greška u programu"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "prelijevanje stȏga"
 
@@ -101,7 +102,7 @@ msgstr "%s: nevaljana opcija -- „%c“\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: opcija zahtijeva argument -- „%c“\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "memorija iscrpljena"
 
@@ -666,7 +667,7 @@ msgstr "Ne mogu ukloniti preusmjerenje %s"
 msgid "cannot undivert `%s'"
 msgstr "Ne mogu ukloniti preusmjerenje %s"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "nije moguće otvoriti „%s“"
@@ -690,7 +691,7 @@ msgstr "UTC odmak je izvan granica raspona"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr ""
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "nije moguće otvoriti ulaznu datoteku „%s“"
@@ -875,17 +876,17 @@ msgstr "GREŠKA: EOF u znakovnom nizu"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "Pokušajte „%s --help” za više informacija.\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Uporaba: %s [OPCIJA]]... DATOTEKA...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
@@ -894,7 +895,7 @@ msgstr ""
 "\n"
 "Ako DATOTEKA nije navedena ili je „=”, čita se standardni ulaz.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
@@ -903,14 +904,14 @@ msgstr ""
 "Obvezni ili neobvezni argumenti za dugačke opcije\n"
 "također su obvezni ili neobvezni za korespondentne kratke opcije."
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -919,7 +920,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -927,11 +928,11 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr ""
 
-#: src/m4.c:246
+#: src/m4.c:250
 msgid ""
 "Preprocessor features:\n"
 "  -D, --define=NAME[=VALUE]    define NAME as having VALUE, or empty\n"
@@ -940,7 +941,7 @@ msgid ""
 "  -U, --undefine=NAME          undefine NAME\n"
 msgstr ""
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, c-format
 msgid ""
 "Limits control:\n"
@@ -950,14 +951,14 @@ msgid ""
 "  -L, --nesting-limit=NUMBER   change nesting limit, 0 for unlimited [%d]\n"
 msgstr ""
 
-#: src/m4.c:263
+#: src/m4.c:266
 msgid ""
 "Frozen state files:\n"
 "  -F, --freeze-state=FILE      produce a frozen state on FILE at end\n"
 "  -R, --reload-state=FILE      reload a frozen state from FILE at start\n"
 msgstr ""
 
-#: src/m4.c:269
+#: src/m4.c:272
 msgid ""
 "Debugging:\n"
 "  -d, --debug[=FLAGS]          set debug level (no FLAGS implies `aeq')\n"
@@ -967,7 +968,7 @@ msgid ""
 "  -t, --trace=NAME             trace NAME when it is defined\n"
 msgstr ""
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -977,7 +978,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -987,44 +988,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "Pozivanje naredbom „egrep” je zastarjelo; koristite „grep -E”.\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "Neispravne zastavice debugiranja: „%s”"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "Pozivanje naredbom „egrep” je zastarjelo; koristite „grep -E”.\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1036,49 +1037,50 @@ msgstr "GREŠKA: EOF u popisu argumenata"
 #: src/macro.c:332
 #, fuzzy, c-format
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
-msgstr "GREŠKA: Ograničenje rekurzije %d je prekoračeno, koristite -L<N> za promjenu"
+msgstr ""
+"GREŠKA: Ograničenje rekurzije %d je prekoračeno, koristite -L<N> za promjenu"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "GREŠKA: Ne mogu napraviti privremenu datoteku za preusmjeravanje"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "GREŠKA: Ne mogu napraviti privremenu datoteku za preusmjeravanje"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "Nije moguće stat %s"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "GREŠKA: Ne mogu napraviti privremenu datoteku za preusmjeravanje"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "nije moguće stvoriti privremenu datoteku"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "GREŠKA: Kopiram ubačenu datoteku"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "GREŠKA: Čitam ubačenu datoteku"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "Nije moguće stat %s"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "Preusmjerenje je preveliko"
@@ -1157,7 +1159,8 @@ msgstr "Preusmjerenje je preveliko"
 #~ msgstr "Neispravan regularni izraz „%s”: %s"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table! (trace_pre ())"
-#~ msgstr "INTERNA GREŠKA: Ugradnja nije pronađena u tablici ugradnji! (trace_pre ())"
+#~ msgstr ""
+#~ "INTERNA GREŠKA: Ugradnja nije pronađena u tablici ugradnji! (trace_pre ())"
 
 #~ msgid "INTERNAL ERROR: Bad token data type (trace_pre ())"
 #~ msgstr "INTERNA GREŠKA: Neispravna vrsta podataka simbola (trace_pre ())"
@@ -1178,7 +1181,8 @@ msgstr "Preusmjerenje je preveliko"
 #~ msgstr "INTERNA GREŠKA: Ugradnja nije pronađena u tablici ugradnji!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in freeze_one_symbol ()"
-#~ msgstr "INTERNA GREŠKA: Neispravna vrsta podataka simbola u freeze_one_symbol ()"
+#~ msgstr ""
+#~ "INTERNA GREŠKA: Neispravna vrsta podataka simbola u freeze_one_symbol ()"
 
 #~ msgid "`%s' from frozen file not found in builtin table!"
 #~ msgstr "„%s” iz zaleđene datoteke nije pronađen u tablici ugradnji!"
@@ -1208,7 +1212,8 @@ msgstr "Preusmjerenje je preveliko"
 #~ msgstr "GREŠKA: Preljev stoga. (Beskonačna rekurzija u definiciji?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1219,16 +1224,20 @@ msgstr "Preusmjerenje je preveliko"
 #~ "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 #~ "  -P, --prefix-builtins        force a `m4_' prefix to all builtins\n"
 #~ msgstr ""
-#~ "Obavezni ili opcionalni argumenti dugačkih opcija također su obavezni ili\n"
+#~ "Obavezni ili opcionalni argumenti dugačkih opcija također su obavezni "
+#~ "ili\n"
 #~ "opcionalni za odgovarajuće kratke opcije.\n"
 #~ "\n"
 #~ "Načini rada:\n"
 #~ "      --help                   prikaži ovu pomoć i izađi\n"
 #~ "      --version                prikaži informacije o inačici i izađi\n"
-#~ "  -e, --interactive            ukloni izlaz iz međuspremnika, zanemari prekide\n"
-#~ "  -E, --fatal-warnings         zaustavi izvršavanje nakon prvog upozorenja\n"
+#~ "  -e, --interactive            ukloni izlaz iz međuspremnika, zanemari "
+#~ "prekide\n"
+#~ "  -E, --fatal-warnings         zaustavi izvršavanje nakon prvog "
+#~ "upozorenja\n"
 #~ "  -Q, --quiet, --silent        izostavi neka upozorenja za ugradnje\n"
-#~ "  -P, --prefix-builtins        prisilno dodaj prefiks „m4_” svim ugradnjama\n"
+#~ "  -P, --prefix-builtins        prisilno dodaj prefiks „m4_” svim "
+#~ "ugradnjama\n"
 
 #~ msgid ""
 #~ "\n"

@@ -1,1 +1,7 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-getcwd.sh
+#!/bin/sh
+
+. "${srcdir=.}/init.sh"; path_prepend_ .
+
+${CHECKER} test-getcwd
+
+Exit $?

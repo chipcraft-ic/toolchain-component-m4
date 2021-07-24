@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU m4 1.4.18d\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2021-05-14 15:42+0900\n"
 "Last-Translator: Seong-ho Cho <darkcircle.0426@gmail.com>\n"
 "Language-Team: Korean <translation-team-ko@googlegroups.com>\n"
 "Language: ko\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
@@ -42,11 +42,11 @@ msgstr "파일 닫는 중 오류"
 msgid "write error"
 msgstr "쓰기 오류"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "프로그램 오류"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "스택 넘침"
 
@@ -100,7 +100,7 @@ msgstr "%s: 부적절한 옵션 -- '%c'\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: 옵션에 인자가 필요합니다 -- '%c'\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "메모리가 바닥남"
 
@@ -658,7 +658,7 @@ msgstr "`%s' 우회 취소 오류"
 msgid "cannot undivert `%s'"
 msgstr "`%s'을(를) 우회 취소할 수 없습니다"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "`%s'을(를) 열 수 없습니다"
@@ -682,7 +682,7 @@ msgstr "종료 코드 상태 값이 범위를 벗어났습니다: `%d'"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "디버깅모드: 잘못된 디버깅 플래그: `%s'"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, c-format
 msgid "cannot set debug file `%s'"
 msgstr "`%s' 디버깅 파일을 지정할 수 없습니다"
@@ -855,17 +855,17 @@ msgstr "오류: 문자열에 파일 끝 문자"
 msgid "Rene' Seindal"
 msgstr "Rene' Seindal"
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, c-format
 msgid "Try `%s --help' for more information."
 msgstr "자세한 정보는 `%s --help'를 입력하십시오."
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "사용법: %s [<옵션>]... [<파일>]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
 "is read.\n"
@@ -873,7 +873,7 @@ msgstr ""
 "<파일>에 매크로를 처리합니다.  <파일>이 없거나 <파일>이 `-' 값이면\n"
 "표준 입력을 읽습니다.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
@@ -881,7 +881,7 @@ msgstr ""
 "긴 옵션의 필수 또는 선택 인자 값은 관련 단축 옵션에 대해서도\n"
 "필수 또는 선택입니다.\n"
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
@@ -891,7 +891,7 @@ msgstr ""
 "      --help                   이 도움말을 표시하고 나갑니다\n"
 "      --version                버전 정보를 출력하고 나갑니다\n"
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -905,7 +905,7 @@ msgstr ""
 "  -P, --prefix-builtins        모든 내장 요소에 대해 `m4_' 접두어 강제\n"
 "  -Q, --quiet, --silent        내장 요소에 대한 일부 경고 메시지를 숨깁니다\n"
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -916,11 +916,11 @@ msgstr ""
 "                               매크로 정의가 <정규식>과 일치하면 경고.\n"
 "                                 기본값: %s\n"
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr "  -W, --word-regexp=<정규식>     매크로 이름 문법에 <정규식> 활용\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 msgid ""
 "Preprocessor features:\n"
 "  -D, --define=NAME[=VALUE]    define NAME as having VALUE, or empty\n"
@@ -929,12 +929,13 @@ msgid ""
 "  -U, --undefine=NAME          undefine NAME\n"
 msgstr ""
 "전처리 기능:\n"
-"  -D, --define=<이름>[=<값>]   <값>을 가진 <이름>을 지정하거나 값을 비워둡니다\n"
+"  -D, --define=<이름>[=<값>]   <값>을 가진 <이름>을 지정하거나 값을 비워둡니"
+"다\n"
 "  -I, --include=<디렉터리>     경로를 넣은 <디렉터리>를 추가합니다\n"
 "  -s, --synclines              `#line <숫자> \"<파일>\"' 행 추가\n"
 "  -U, --undefine=<이름>        <이름> 정의 해제\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, c-format
 msgid ""
 "Limits control:\n"
@@ -947,19 +948,22 @@ msgstr ""
 "  -g, --gnu                    -G 대신 적용하여 GNU 확장을 재적용\n"
 "  -G, --traditional            모든 GNU 확장을 숨깁니다\n"
 "  -H, --hashsize=<소수>        심볼 탐색 해시 테이블 크기 설정 [509]\n"
-"  -L, --nesting-limit=<숫자>   중첩 한계를 바꿉니다. 0 값은 무제한을 의미 [%d]\n"
+"  -L, --nesting-limit=<숫자>   중첩 한계를 바꿉니다. 0 값은 무제한을 의미 "
+"[%d]\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 msgid ""
 "Frozen state files:\n"
 "  -F, --freeze-state=FILE      produce a frozen state on FILE at end\n"
 "  -R, --reload-state=FILE      reload a frozen state from FILE at start\n"
 msgstr ""
 "프리징 상태 파일:\n"
-"  -F, --freeze-state=<파일>      <파일> 마지막 부분에 프리징 상태를 만들어냄\n"
-"  -R, --reload-state=<파일>      <파일> 시작 부분에 프리징 상태를 다시 불러옴\n"
+"  -F, --freeze-state=<파일>      <파일> 마지막 부분에 프리징 상태를 만들어"
+"냄\n"
+"  -R, --reload-state=<파일>      <파일> 시작 부분에 프리징 상태를 다시 불러"
+"옴\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 msgid ""
 "Debugging:\n"
 "  -d, --debug[=FLAGS]          set debug level (no FLAGS implies `aeq')\n"
@@ -969,13 +973,15 @@ msgid ""
 "  -t, --trace=NAME             trace NAME when it is defined\n"
 msgstr ""
 "디버깅:\n"
-"  -d, --debug[=<플래그>]          디버깅 수준 설정 (<플래그>가 겂다면  `aeq' 생략)\n"
-"      --debugfile[=<파일>]       디버깅 및 추적 정보 출력을 <파일>로 내보냅니다\n"
+"  -d, --debug[=<플래그>]          디버깅 수준 설정 (<플래그>가 겂다면  `aeq' "
+"생략)\n"
+"      --debugfile[=<파일>]       디버깅 및 추적 정보 출력을 <파일>로 내보냅니"
+"다\n"
 "                                 (기본값: stderr, 빈 문자열이면 무시)\n"
 "  -l, --arglength=<숫자>          매크로 추적 크기 제한\n"
 "  -t, --trace=<이름>             <이름>을 지정하면 해당 이름을 추적\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -985,7 +991,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr "<플래그>는 다음 중 하나입니다\n"
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1001,7 +1007,7 @@ msgstr ""
 "  x   c 플래그를 붙여 단일 매크로 호출 ID 추가\n"
 "  V   위 모든 플래그를 짧게 줄임\n"
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
@@ -1009,38 +1015,40 @@ msgstr ""
 "지정했을 경우, `M4PATH' 환경 변수는 `-I'로 지정한 값 다음에 붙을 콜론 분리 \n"
 "디렉터리 목록 입니다.\n"
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
-msgstr "종료 상태 코드 0은 성공, 1은 실패, 63은 프리징 파일 버전 불일치, 그리고 기타 코드는 m4exit 매크로에 전달한 값입니다.\n"
+msgstr ""
+"종료 상태 코드 0은 성공, 1은 실패, 63은 프리징 파일 버전 불일치, 그리고 기타 "
+"코드는 m4exit 매크로에 전달한 값입니다.\n"
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr "내부 에러 발견. <%s>에 버그를 보고하십시오"
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr "경고: `m4 -%c' 옵션은 다음 릴리스에서 제거 예정입니다"
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "경고: `m4 %s' 옵션이 오래됐습니다"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, c-format
 msgid "bad debug flags: `%s'"
 msgstr "잘못된 디버깅 플래그: `%s'"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "경고: `m4 -e' 옵션이 오래되었으니 `-i'를 대신 사용하십시오"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr "stderr"
 
@@ -1053,38 +1061,38 @@ msgstr "오류: 인자 목록에 파일 끝 문자"
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
 msgstr "재귀 한계 단계 %d 번 초과. 바꾸려면 -L<N> 옵션을 사용하십시오"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 msgid "cannot clean temporary file for diversion"
 msgstr "우회 임시 파일을 지울 수 없습니다"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 msgid "cannot create temporary file for diversion"
 msgstr "우회 임시 파일을 만들 수 없습니다"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 msgid "cannot seek within diversion"
 msgstr "우회 값 범위를 탐색할 수 없습니다"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 msgid "cannot close temporary file for diversion"
 msgstr "우회용 임시 파일을 닫을 수 없습니다"
 
-#: src/output.c:474
+#: src/output.c:478
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "오류: 임시 파일에 우회 값을 플러싱할 수 없습니다"
 
-#: src/output.c:568
+#: src/output.c:572
 msgid "ERROR: copying inserted file"
 msgstr "오류: 추가 파일 복사 중"
 
-#: src/output.c:816
+#: src/output.c:820
 msgid "error reading inserted file"
 msgstr "추가 파일 읽기 오류"
 
-#: src/output.c:983
+#: src/output.c:987
 msgid "cannot stat diversion"
 msgstr "우회 상태 정보를 가져올 수 없습니다"
 
-#: src/output.c:987
+#: src/output.c:991
 msgid "diversion too large"
 msgstr "우회 값이 너무 큽니다"

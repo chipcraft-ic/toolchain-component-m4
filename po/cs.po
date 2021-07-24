@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2000-08-08 23:19+0200\n"
 "Last-Translator: Jiří Pavlovský <pavlovsk@ff.cuni.cz>\n"
 "Language-Team: Czech <cs@li.org>\n"
@@ -40,11 +40,11 @@ msgstr "chyba během uzavírání výstupního souboru"
 msgid "write error"
 msgstr "chyba při zápisu"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "chyba programu"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "přetečení zásobníku"
 
@@ -98,7 +98,7 @@ msgstr "%s: neznámý přepínač – „%c“\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: přepínač vyžaduje argument – „%c“\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "paměť vyčerpána"
 
@@ -532,7 +532,8 @@ msgstr ""
 msgid "Report bugs to: %s\n"
 msgstr ""
 "Chyby v programu oznamujte (anglicky) na adresu: <%s>\n"
-"Připomínky k překladu na adresu: <translation-team-cs@lists.sourceforge.net>\n"
+"Připomínky k překladu na adresu: <translation-team-cs@lists.sourceforge."
+"net>\n"
 
 #: lib/version-etc.c:251
 #, c-format
@@ -588,7 +589,8 @@ msgstr "Varování: příliš málo argumentů pro vestavěné makro `%s'"
 #: src/builtin.c:394
 #, fuzzy, c-format
 msgid "Warning: excess arguments to builtin `%s' ignored"
-msgstr "Varování: příliš mnoho argumentů pro vestavěné makro `%s' - budou ignorovány"
+msgstr ""
+"Varování: příliš mnoho argumentů pro vestavěné makro `%s' - budou ignorovány"
 
 #: src/builtin.c:415 src/builtin.c:1114
 #, fuzzy, c-format
@@ -666,7 +668,7 @@ msgstr "Chyba při volání makra undivert pro %s"
 msgid "cannot undivert `%s'"
 msgstr "Chyba při volání makra undivert pro %s"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "„%s“ nelze otevřít"
@@ -690,7 +692,7 @@ msgstr "posun od UT mimo povolený rozsah"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "Ladící mód: špatné ladící volby: `%s'"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "vstupní soubor „%s“ nelze otevřít"
@@ -875,40 +877,43 @@ msgstr "CHYBA: EOF v řetězci"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "Více informací získáte příkazem `%s --help'.\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Použití: %s [PŘEPÍNAČ]... [SOUBOR]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
 "is read.\n"
 msgstr ""
 "\n"
-"Jestliže SOUBOR není zadán, nebo je SOUBOR `-', pak je čten standardní vstup.\n"
+"Jestliže SOUBOR není zadán, nebo je SOUBOR `-', pak je čten standardní "
+"vstup.\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
-msgstr "Argumenty požadované dlouhými přepínači jsou také požadovány jejich krátkými formami."
+msgstr ""
+"Argumenty požadované dlouhými přepínači jsou také požadovány jejich krátkými "
+"formami."
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -917,7 +922,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -925,11 +930,13 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
-msgstr "  -W, --word-regexp=REGVÝR        syntaxe jmen maker bude určena pomocí REGVÝR\n"
+msgstr ""
+"  -W, --word-regexp=REGVÝR        syntaxe jmen maker bude určena pomocí "
+"REGVÝR\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -945,9 +952,10 @@ msgstr ""
 "  -D, --define=MAKRO[=HODNOTA]    definuje MAKRO mající HODNOTU, může být\n"
 "                                  i prázdné\n"
 "  -U, --undefine=MAKRO            smaže vestavěné MAKRO\n"
-"  -s, --synclines                 vloží řádky tvaru `#line ČÍSLO \"SOUBOR\"'\n"
+"  -s, --synclines                 vloží řádky tvaru `#line ČÍSLO \"SOUBOR"
+"\"'\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -959,10 +967,11 @@ msgstr ""
 "\n"
 "Nastavení limitů:\n"
 "  -G, --traditional               vypne GNU rozšíření\n"
-"  -H, --hashsize=PRVOČÍSLO        velikost hash tabulky pro vyhledávání symbolů\n"
+"  -H, --hashsize=PRVOČÍSLO        velikost hash tabulky pro vyhledávání "
+"symbolů\n"
 "  -L, --nesting-limit=ČÍSLO       nastaví limit pro vnořená volání maker\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -971,10 +980,11 @@ msgid ""
 msgstr ""
 "\n"
 "Zmrazené soubory:\n"
-"  -F, --freeze-state=SOUBOR       při ukončení uloží zmrazený stav do SOUBORU\n"
+"  -F, --freeze-state=SOUBOR       při ukončení uloží zmrazený stav do "
+"SOUBORU\n"
 "  -R, --reload-state=SOUBOR       při startu načte zmrazený stav ze SOUBORU\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -991,9 +1001,10 @@ msgstr ""
 "  -t, --trace=MAKRO               sleduje MAKRO, když je definováno\n"
 "  -l, --arglength=POČET           reguluje počet výstupních informací\n"
 "                                  ze sledování maker\n"
-"  -o, --error-output=SOUBOR       přesměruje výstup ladění a sledování do SOUBORU\n"
+"  -o, --error-output=SOUBOR       přesměruje výstup ladění a sledování do "
+"SOUBORU\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -1003,7 +1014,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1013,44 +1024,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr "Spouštění programu jako „egrep“ je zastaralé; použijte „grep -E“.\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "Špatné ladící volby: `%s'"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr "Spouštění programu jako „egrep“ je zastaralé; použijte „grep -E“.\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1064,47 +1075,47 @@ msgstr "CHYBA: EOF v seznamu argumentů"
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
 msgstr "CHYBA: překročen limit pro rekurzi (%d), změňte jej pomocí -L<N>"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "CHYBA: dočasný soubor pro uložení odloženého výstupu nelze vytvořit"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "CHYBA: dočasný soubor pro uložení odloženého výstupu nelze vytvořit"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "Chyba při volání funkce stat pro soubor obsahující odložený výstup"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "CHYBA: dočasný soubor pro uložení odloženého výstupu nelze vytvořit"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "CHYBA: odložený výstup nelze zapsat do dočasného souboru"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "CHYBA: při zapisování vloženého souboru"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "CHYBA: při čtení vloženého souboru"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "Chyba při volání funkce stat pro soubor obsahující odložený výstup"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "Odložený výstup je příliš veliký."
@@ -1153,7 +1164,8 @@ msgstr "Odložený výstup je příliš veliký."
 #~ msgstr "Jméno %s není definováno"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table!"
-#~ msgstr "VNITŘNÍ CHYBA: Vestavěné makro nenalezeno v tabulce vestavěných maker!"
+#~ msgstr ""
+#~ "VNITŘNÍ CHYBA: Vestavěné makro nenalezeno v tabulce vestavěných maker!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in m4_dumpdef ()"
 #~ msgstr "VNITŘNÍ CHYBA: špatný typ tokenu v m4_dumpdef ()"
@@ -1202,7 +1214,8 @@ msgstr "Odložený výstup je příliš veliký."
 #~ msgstr "VNITŘNÍ CHYBA: špatný operátor v mult_term ()"
 
 #~ msgid "INTERNAL ERROR: Built-in not found in builtin table!"
-#~ msgstr "VNITŘNÍ CHYBA: Vestavěné makro nenalezeno v tabulce vestavěných maker!"
+#~ msgstr ""
+#~ "VNITŘNÍ CHYBA: Vestavěné makro nenalezeno v tabulce vestavěných maker!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in freeze_one_symbol ()"
 #~ msgstr "VNITŘNÍ CHYBA: špatný typ tokenu ve freeze_one_symbol ()"
@@ -1235,7 +1248,8 @@ msgstr "Odložený výstup je příliš veliký."
 #~ msgstr "CHYBA: Přetečení zásobníku. (nekonečná rekurze makra define?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1246,27 +1260,32 @@ msgstr "Odložený výstup je příliš veliký."
 #~ "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 #~ "  -P, --prefix-builtins        force a `m4_' prefix to all builtins\n"
 #~ msgstr ""
-#~ "Povinné či volitelné argumenty pro dlouhé přepínače jsou povinné respektive\n"
+#~ "Povinné či volitelné argumenty pro dlouhé přepínače jsou povinné "
+#~ "respektive\n"
 #~ "volitelné i pro odpovídající přepínače krátké.\n"
 #~ "\n"
 #~ "Chování programu:\n"
 #~ "      --help                      vypíše tuto nápovědu a skončí\n"
 #~ "      --version                   vypíše označení verze a skončí\n"
-#~ "  -e, --interactive               nebufferovaný výstup, ignoruje přerušení\n"
+#~ "  -e, --interactive               nebufferovaný výstup, ignoruje "
+#~ "přerušení\n"
 #~ "  -E, --fatal-warnings            skončí po prvním varování\n"
 #~ "  -Q, --quiet, --silent           potlačí některá varování týkající se\n"
 #~ "                                  vestavěných maker\n"
-#~ "  -P, --prefix-builtins           všechna vestavěná makra budou mít prefix `m4_'\n"
+#~ "  -P, --prefix-builtins           všechna vestavěná makra budou mít "
+#~ "prefix `m4_'\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Nastavení dynamického zavádění modulů:\n"
-#~ "  -m, --module-directory=ADRESÁŘ  přidá ADRESÁŘ k seznamu adresářů s moduly\n"
+#~ "  -m, --module-directory=ADRESÁŘ  přidá ADRESÁŘ k seznamu adresářů s "
+#~ "moduly\n"
 #~ "  -M, --load-module=MODUL         zavede dynamické MODUL z M4MODPATH\n"
 
 #~ msgid ""
@@ -1370,7 +1389,8 @@ msgstr "Odložený výstup je příliš veliký."
 #~ "Memory bounds violation detected (SIGSEGV).  Either a stack overflow\n"
 #~ "occurred, or there is a bug in "
 #~ msgstr ""
-#~ "Neoprávněný přístup do paměti (SIGSEGV). Jedná se buď o přetečení zásobníku,\n"
+#~ "Neoprávněný přístup do paměti (SIGSEGV). Jedná se buď o přetečení "
+#~ "zásobníku,\n"
 #~ "nebo o chybu "
 
 #~ msgid ".  Check for possible infinite recursion.\n"

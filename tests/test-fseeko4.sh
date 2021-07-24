@@ -1,1 +1,5 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-fseeko4.sh
+#!/bin/sh
+
+${CHECKER} ./test-fseeko4${EXEEXT} "$srcdir/test-fseeko4.sh" || exit 1
+
+exit 0

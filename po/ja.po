@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2011-10-23 08:32+0900\n"
 "Last-Translator: Yasuaki Taniguchi <yasuakit@gmail.com>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -46,11 +46,11 @@ msgstr "ファイルクローズエラー"
 msgid "write error"
 msgstr "書き込みエラー"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "プログラムエラー"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "スタックオーバーフロー"
 
@@ -104,7 +104,7 @@ msgstr "%s: 無効なオプション -- '%c'\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: オプションには引数が必要です -- '%c'\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "メモリを使い果たしました"
 
@@ -412,7 +412,8 @@ msgid ""
 "There is NO WARRANTY, to the extent permitted by law.\n"
 msgstr ""
 "\n"
-"ライセンス GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"ライセンス GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl."
+"html>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
@@ -535,7 +536,8 @@ msgid "Report bugs to: %s\n"
 msgstr ""
 "\n"
 "バグを発見したら <%s> に報告して下さい。\n"
-"翻訳に関するバグは<translation-team-ja@lists.sourceforge.net>に報告してください。\n"
+"翻訳に関するバグは<translation-team-ja@lists.sourceforge.net>に報告してくださ"
+"い。\n"
 
 #: lib/version-etc.c:251
 #, c-format
@@ -550,7 +552,8 @@ msgstr "%s のホームページ: <%s>\n"
 #: lib/version-etc.c:260
 #, fuzzy, c-format
 msgid "General help using GNU software: <%s>\n"
-msgstr "GNU ソフトウェアを使用する際の一般的なヘルプ: <http://www.gnu.org/gethelp/>\n"
+msgstr ""
+"GNU ソフトウェアを使用する際の一般的なヘルプ: <http://www.gnu.org/gethelp/>\n"
 
 #: lib/wait-process.c:232 lib/wait-process.c:264 lib/wait-process.c:326
 #, c-format
@@ -667,7 +670,7 @@ msgstr "\"%s\"の書込み中にエラーが発生しました"
 msgid "cannot undivert `%s'"
 msgstr "%s を undivert できません"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "`%s'を開けません"
@@ -691,7 +694,7 @@ msgstr "計算結果は範囲外の値です"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "デバッグモード: 誤ったデバッグフラグです: `%s'"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "入力ファイル`%s'を開けません"
@@ -876,17 +879,17 @@ msgstr "エラー: 文字列内でファイル終端 (EOF) に達しました"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "詳しくは `%s --help' を実行して下さい。\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "使用法: %s [OPTION]... [FILE]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
@@ -896,21 +899,23 @@ msgstr ""
 "FILE が指定されていない場合および指定されたファイルが `-' の場合は\n"
 "        標準入力が読み込まれます。\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
-msgstr "長い形式のオプションで必須または任意の引数は、それに対応する短い形式のオプションでも同様に必須または任意です。"
+msgstr ""
+"長い形式のオプションで必須または任意の引数は、それに対応する短い形式のオプ"
+"ションでも同様に必須または任意です。"
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -919,7 +924,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -927,13 +932,13 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr ""
 "  -W, --word-regexp=REGEXP     マクロ名の構文として正規表現 REGEXP\n"
 "                               を使用する\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -944,14 +949,15 @@ msgid ""
 msgstr ""
 "\n"
 "プリプロセッサ機能:\n"
-"  -I, --include=DIRECTORY      2番目のインクルードディレクトリとして DIRECTORY\n"
+"  -I, --include=DIRECTORY      2番目のインクルードディレクトリとして "
+"DIRECTORY\n"
 "                               を検索する\n"
 "  -D, --define=NAME[=VALUE]    NAME の値を VALUE に設定する。省略した場合は\n"
 "                               空になる\n"
 "  -U, --undefine=NAME          NAME ビルトインを削除する\n"
 "  -s, --synclines              `#line NO \"FILE\"' 行を生成する\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -963,10 +969,11 @@ msgstr ""
 "\n"
 "制限の制御:\n"
 "  -G, --traditional            全ての GNU 拡張を抑止する\n"
-"  -H, --hashsize=PRIME         シンボル検索のハッシュテーブルサイズを設定する\n"
+"  -H, --hashsize=PRIME         シンボル検索のハッシュテーブルサイズを設定す"
+"る\n"
 "  -L, --nesting-limit=NUMBER   ネストの制限を人為的に NUMBER に変更する\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -979,7 +986,7 @@ msgstr ""
 "   -R, --reload-state=FILE      最初に指定された FILE から\n"
 "                                凍結された定義をロードします\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -998,7 +1005,7 @@ msgstr ""
 "  -o, --error-output=FILE      デバッグとトレースの出力を FILE にリダイレ\n"
 "                               クトする\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -1008,7 +1015,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1018,44 +1025,48 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, fuzzy, c-format
 msgid "warning: `m4 %s' is deprecated"
-msgstr "`egrep' という名前での起動は廃止予定です。代わりに `grep -E' を使用してください。\n"
+msgstr ""
+"`egrep' という名前での起動は廃止予定です。代わりに `grep -E' を使用してくださ"
+"い。\n"
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "不正なデバッグフラグ: `%s'"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, fuzzy, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
-msgstr "`egrep' という名前での起動は廃止予定です。代わりに `grep -E' を使用してください。\n"
+msgstr ""
+"`egrep' という名前での起動は廃止予定です。代わりに `grep -E' を使用してくださ"
+"い。\n"
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr "標準エラー出力"
 
@@ -1071,51 +1082,51 @@ msgstr ""
 "エラー：再帰的定義のネストが指定された値 %d を超えています。\n"
 "        -L<数字> オプションを用いてネスト数の上限を増やして下さい。"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "エラー: divert のためのテンポラリファイルが作成できません。"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "エラー: divert のためのテンポラリファイルが作成できません。"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr ""
 "divert のためのファイルのステータスを得ることができません。\n"
 "        (stat できません。)"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "エラー: divert のためのテンポラリファイルが作成できません。"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "エラー: テンポラリファイルに divert すべき内容を write できません。"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "エラー: 挿入されるべきファイルをコピー中です。"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "エラー: 挿入されるべきファイルをリード中です。"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr ""
 "divert のためのファイルのステータスを得ることができません。\n"
 "        (stat できません。)"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "divert が大きすぎます"
@@ -1158,7 +1169,8 @@ msgstr "divert が大きすぎます"
 #~ msgstr "[ または [^ が不一致です"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in define_macro ()"
-#~ msgstr "内部エラー：関数 define_macro () 内のトークンデータの種類に誤りがあります"
+#~ msgstr ""
+#~ "内部エラー：関数 define_macro () 内のトークンデータの種類に誤りがあります"
 
 #~ msgid "Undefined name %s"
 #~ msgstr "%s という名前は定義されていません"
@@ -1167,7 +1179,8 @@ msgstr "divert が大きすぎます"
 #~ msgstr "内部エラー：ビルトインテーブルにビルトインが見つかりません!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in m4_dumpdef ()"
-#~ msgstr "内部エラー：関数 m4_dumpdef () 内のトークンデータの種類に誤りがあります"
+#~ msgstr ""
+#~ "内部エラー：関数 m4_dumpdef () 内のトークンデータの種類に誤りがあります"
 
 #, fuzzy
 #~ msgid "Undefined name `%s'"
@@ -1193,7 +1206,8 @@ msgstr "divert が大きすぎます"
 #~ msgstr "正規表現 `%s' に誤りがあります: %s"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table! (trace_pre ())"
-#~ msgstr "内部エラー：ビルトインテーブルにビルトインが見つかりません! (trace_pre ())"
+#~ msgstr ""
+#~ "内部エラー：ビルトインテーブルにビルトインが見つかりません! (trace_pre ())"
 
 #~ msgid "INTERNAL ERROR: Bad token data type (trace_pre ())"
 #~ msgstr "内部エラー：トークンデータの種類に誤りがあります (trace_pre ())"
@@ -1214,7 +1228,8 @@ msgstr "divert が大きすぎます"
 #~ msgstr "内部エラー: ビルトインテーブルにビルトインが見つかりません!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in freeze_one_symbol ()"
-#~ msgstr "内部エラー: freeze_one_symbol () 内のトークンデータの種類に誤りがあります"
+#~ msgstr ""
+#~ "内部エラー: freeze_one_symbol () 内のトークンデータの種類に誤りがあります"
 
 #~ msgid "`%s' from frozen file not found in builtin table!"
 #~ msgstr "凍結ファイルの `%s' がビルトインテーブル内にありません!"
@@ -1241,10 +1256,12 @@ msgstr "divert が大きすぎます"
 #~ msgstr "NONE"
 
 #~ msgid "ERROR: Stack overflow.  (Infinite define recursion?)"
-#~ msgstr "エラー: スタックオーバーフローです。(無限に再帰定義をしていませんか?)"
+#~ msgstr ""
+#~ "エラー: スタックオーバーフローです。(無限に再帰定義をしていませんか?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1261,7 +1278,8 @@ msgstr "divert が大きすぎます"
 #~ "操作モード:\n"
 #~ "      --help                   オプション一覧を出力し、終了する\n"
 #~ "      --version                バージョン情報を出力し、終了する\n"
-#~ "  -e, --interactive            出力バッファリングせず、割り込みを無視する\n"
+#~ "  -e, --interactive            出力バッファリングせず、割り込みを無視す"
+#~ "る\n"
 #~ "  -E, --fatal-warnings         最初の警告で実行を中止する\n"
 #~ "  -Q, --quiet, --silent        ビルトインのいくつかの警告を抑止する\n"
 #~ "  -P, --prefix-builtins        全てのビルトインに `m4_' という接頭辞を\n"
@@ -1270,13 +1288,16 @@ msgstr "divert が大きすぎます"
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
 #~ "動的ローディング機能:\n"
-#~ "  -m, --module-directory=DIRECTORY  モジュール検索パスに DIRECTORY を加える\n"
-#~ "  -M, --load-module=MODULE          M4MODPATH から動的に MODULE をロードする\n"
+#~ "  -m, --module-directory=DIRECTORY  モジュール検索パスに DIRECTORY を加え"
+#~ "る\n"
+#~ "  -M, --load-module=MODULE          M4MODPATH から動的に MODULE をロードす"
+#~ "る\n"
 
 #~ msgid ""
 #~ "\n"
@@ -1315,7 +1336,8 @@ msgstr "divert が大きすぎます"
 #~ msgstr ""
 #~ "\n"
 #~ "バグを発見したら <bug-m4@gnu.org> に報告して下さい。\n"
-#~ "翻訳に関するバグは<translation-team-ja@lists.sourceforge.net>に報告してください。\n"
+#~ "翻訳に関するバグは<translation-team-ja@lists.sourceforge.net>に報告してく"
+#~ "ださい。\n"
 
 #~ msgid "ERROR: failed to add search directory `%s'"
 #~ msgstr "エラー: 検索ディレクトリ `%s' の追加に失敗しました"
@@ -1579,10 +1601,14 @@ msgstr "divert が大きすぎます"
 #~ msgstr "\"%s\" ファイルの書き込み中にエラーが発生しました"
 
 #~ msgid "Java compiler not found, try installing gcj or set $JAVAC"
-#~ msgstr "Java コンパイラが見つかりません。 gcj をインストールするか、またはt $JAVAC を設定してみてください"
+#~ msgstr ""
+#~ "Java コンパイラが見つかりません。 gcj をインストールするか、またはt "
+#~ "$JAVAC を設定してみてください"
 
 #~ msgid "Java virtual machine not found, try installing gij or set $JAVA"
-#~ msgstr "Java 仮想マシンが見つかりません。 gij をインストールするか、または $JAVA を設定してみてください"
+#~ msgstr ""
+#~ "Java 仮想マシンが見つかりません。 gij をインストールするか、または $JAVA "
+#~ "を設定してみてください"
 
 #~ msgid "%s subprocess I/O error"
 #~ msgstr "%s サブプロセス I/O エラー"
@@ -1706,7 +1732,8 @@ msgstr "divert が大きすぎます"
 
 #~ msgid ""
 #~ "\n"
-#~ "This is free software.  You may redistribute copies of it under the terms of\n"
+#~ "This is free software.  You may redistribute copies of it under the terms "
+#~ "of\n"
 #~ "the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.\n"
 #~ "There is NO WARRANTY, to the extent permitted by law.\n"
 #~ "\n"

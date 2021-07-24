@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: m4 1.4o\n"
 "Report-Msgid-Bugs-To: bug-m4@gnu.org\n"
-"POT-Creation-Date: 2021-05-11 09:07-0500\n"
+"POT-Creation-Date: 2021-07-24 11:32+0200\n"
 "PO-Revision-Date: 2001-10-10 10:31+02:00\n"
 "Last-Translator: Martin von Löwis <martin@mira.isdn.cs.tu-berlin.de>\n"
 "Language-Team: German <de@li.org>\n"
@@ -41,11 +41,11 @@ msgstr "Fehler beim Schließen der Ausgabedatei "
 msgid "write error"
 msgstr "Schreibfehler"
 
-#: lib/c-stack.c:227 lib/c-stack.c:340
+#: lib/c-stack.c:187
 msgid "program error"
 msgstr "Programmfehler"
 
-#: lib/c-stack.c:228 lib/c-stack.c:341
+#: lib/c-stack.c:188
 msgid "stack overflow"
 msgstr "Stack-Überlauf"
 
@@ -99,7 +99,7 @@ msgstr "%s: ungültige Option -- „%c“\n"
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s: Option erfordert ein Argument -- „%c“\n"
 
-#: lib/obstack.c:338 lib/obstack.c:340 lib/xalloc-die.c:34
+#: lib/obstack.c:337 lib/obstack.c:339 lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "Virtueller Speicher erschöpft."
 
@@ -569,7 +569,8 @@ msgstr ""
 #, c-format
 msgid "Report bugs to: %s\n"
 msgstr ""
-"Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge.net>,\n"
+"Melden Sie Übersetzungsfehler an <translation-team-de@lists.sourceforge."
+"net>,\n"
 "Programmfehler dagegen (auf Englisch, mit LC_ALL=C) an %s\n"
 
 #: lib/version-etc.c:251
@@ -625,7 +626,8 @@ msgstr "Warnung: Zu wenig Argumente für eingebaute Funktion »%s«"
 #: src/builtin.c:394
 #, fuzzy, c-format
 msgid "Warning: excess arguments to builtin `%s' ignored"
-msgstr "Warnung: Überschüssige Argumente für eingebaute Funktion »%s« ignoriert"
+msgstr ""
+"Warnung: Überschüssige Argumente für eingebaute Funktion »%s« ignoriert"
 
 #: src/builtin.c:415 src/builtin.c:1114
 #, fuzzy, c-format
@@ -702,7 +704,7 @@ msgstr "Kann Umleitung %s nicht aufheben"
 msgid "cannot undivert `%s'"
 msgstr "Kann Umleitung %s nicht aufheben"
 
-#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:379
+#: src/builtin.c:1366 src/freeze.c:115 src/m4.c:382
 #, c-format
 msgid "cannot open `%s'"
 msgstr "Öffnen von »%s« fehlgeschlagen"
@@ -726,7 +728,7 @@ msgstr "Der Offset zu UT ist außerhalb des gültigen Bereiches"
 msgid "Debugmode: bad debug flags: `%s'"
 msgstr "Debugmodus: falsche Debug Flags: »%s«"
 
-#: src/builtin.c:1722 src/m4.c:625 src/m4.c:689
+#: src/builtin.c:1722 src/m4.c:628 src/m4.c:692
 #, fuzzy, c-format
 msgid "cannot set debug file `%s'"
 msgstr "Kann die Eingabedatei »%s« nicht öffnen"
@@ -910,17 +912,17 @@ msgstr "FEHLER: Dateiende in Zeichenkette"
 msgid "Rene' Seindal"
 msgstr ""
 
-#: src/m4.c:207
+#: src/m4.c:210
 #, fuzzy, c-format
 msgid "Try `%s --help' for more information."
 msgstr "»%s --help« zeigt weitere Informationen.\n"
 
-#: src/m4.c:213
+#: src/m4.c:216
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]...\n"
 msgstr "Aufruf: %s [OPTION]... [DATEI]...\n"
 
-#: src/m4.c:214
+#: src/m4.c:217
 #, fuzzy
 msgid ""
 "Process macros in FILEs.  If no FILE or if FILE is `-', standard input\n"
@@ -929,21 +931,23 @@ msgstr ""
 "\n"
 "Ohne DATEI oder wenn DATEI `-' ist, wird die Standardeingabe gelesen\n"
 
-#: src/m4.c:219
+#: src/m4.c:222
 #, fuzzy
 msgid ""
 "Mandatory or optional arguments to long options are mandatory or optional\n"
 "for short options too.\n"
-msgstr "Obligatorische oder optionale Argumente von langen Optionen sind ebenfalls obligatorische bzw. optionale Argumente für jede zugehörige kurze Option."
+msgstr ""
+"Obligatorische oder optionale Argumente von langen Optionen sind ebenfalls "
+"obligatorische bzw. optionale Argumente für jede zugehörige kurze Option."
 
-#: src/m4.c:224
+#: src/m4.c:227
 msgid ""
 "Operation modes:\n"
 "      --help                   display this help and exit\n"
 "      --version                output version information and exit\n"
 msgstr ""
 
-#: src/m4.c:229
+#: src/m4.c:232
 msgid ""
 "  -E, --fatal-warnings         once: warnings become errors, twice: stop\n"
 "                                 execution at first error\n"
@@ -952,7 +956,7 @@ msgid ""
 "  -Q, --quiet, --silent        suppress some warnings for builtins\n"
 msgstr ""
 
-#: src/m4.c:236
+#: src/m4.c:239
 #, c-format
 msgid ""
 "      --warn-macro-sequence[=REGEXP]\n"
@@ -960,11 +964,11 @@ msgid ""
 "                                 default %s\n"
 msgstr ""
 
-#: src/m4.c:242
+#: src/m4.c:245
 msgid "  -W, --word-regexp=REGEXP     use REGEXP for macro name syntax\n"
 msgstr "  -W, --word-regexp=REGEXP     benutze REGEXP für Makronamensyntax\n"
 
-#: src/m4.c:246
+#: src/m4.c:250
 #, fuzzy
 msgid ""
 "Preprocessor features:\n"
@@ -975,12 +979,13 @@ msgid ""
 msgstr ""
 "\n"
 "Präprozessoreigenschaften:\n"
-"  -I, --include=VERZEICHNIS    durchsuche VERZEICHNIS als zweites bei `include'\n"
+"  -I, --include=VERZEICHNIS    durchsuche VERZEICHNIS als zweites bei "
+"`include'\n"
 "  -D, --define=NAME[=WERT]     füge NAME mit WERT (oder leer) ein\n"
 "  -U, --undefine=NAME          lösche eingebaute Funktion NAME\n"
 "  -s, --synclines              erzeuge `#line NR \"DATEI\"' Zeilen\n"
 
-#: src/m4.c:255
+#: src/m4.c:258
 #, fuzzy, c-format
 msgid ""
 "Limits control:\n"
@@ -993,9 +998,10 @@ msgstr ""
 "Setze Grenzen:\n"
 "  -G, --traditional            schalte alle GNU Erweiterungen aus\n"
 "  -H, --hashsize=PRIMZAHL      setze Größe der Symbol-Hashtabelle\n"
-"  -L, --nesting-limit=NUMMER   setze künstliche Grenze für Schachtelungstiefe\n"
+"  -L, --nesting-limit=NUMMER   setze künstliche Grenze für "
+"Schachtelungstiefe\n"
 
-#: src/m4.c:263
+#: src/m4.c:266
 #, fuzzy
 msgid ""
 "Frozen state files:\n"
@@ -1004,10 +1010,12 @@ msgid ""
 msgstr ""
 "\n"
 "Eingefrorene Dateien:\n"
-"  -F, --freeze-state=DATEI     erzeuge am Ende eine eingefrorene Form in DATEI\n"
-"  -R, --reload-state=DATEI     lade zu Beginn Zustand von eingefrorener DATEI\n"
+"  -F, --freeze-state=DATEI     erzeuge am Ende eine eingefrorene Form in "
+"DATEI\n"
+"  -R, --reload-state=DATEI     lade zu Beginn Zustand von eingefrorener "
+"DATEI\n"
 
-#: src/m4.c:269
+#: src/m4.c:272
 #, fuzzy
 msgid ""
 "Debugging:\n"
@@ -1019,12 +1027,14 @@ msgid ""
 msgstr ""
 "\n"
 "Debugging:\n"
-"  -d, --debug=[FLAGS]          setze Debuglevel (keine FLAGS bedeutet `aeq')\\\n"
+"  -d, --debug=[FLAGS]          setze Debuglevel (keine FLAGS bedeutet "
+"`aeq')\\\n"
 "  -t, --trace=NAME             verfolge NAME, wenn er definiert wird\n"
 "  -l, --arglength=NUMMER       beschränke Größe bei Macroverfolgung\n"
-"  -o, --error-output=DATEI     leite Debug- und Verfolgungsausgaben nach DATEI\n"
+"  -o, --error-output=DATEI     leite Debug- und Verfolgungsausgaben nach "
+"DATEI\n"
 
-#: src/m4.c:278
+#: src/m4.c:281
 msgid ""
 "FLAGS is any of:\n"
 "  a   show actual arguments\n"
@@ -1034,7 +1044,7 @@ msgid ""
 "  i   show changes in input files\n"
 msgstr ""
 
-#: src/m4.c:286
+#: src/m4.c:289
 msgid ""
 "  l   say current input line number\n"
 "  p   show results of path searches\n"
@@ -1044,44 +1054,44 @@ msgid ""
 "  V   shorthand for all of the above flags\n"
 msgstr ""
 
-#: src/m4.c:295
+#: src/m4.c:298
 msgid ""
 "If defined, the environment variable `M4PATH' is a colon-separated list\n"
 "of directories included after any specified by `-I'.\n"
 msgstr ""
 
-#: src/m4.c:300
+#: src/m4.c:303
 msgid ""
 "Exit status is 0 for success, 1 for failure, 63 for frozen file version\n"
 "mismatch, or whatever value was passed to the m4exit macro.\n"
 msgstr ""
 
-#: src/m4.c:436
+#: src/m4.c:439
 #, c-format
 msgid "internal error detected; please report this bug to <%s>"
 msgstr ""
 
-#: src/m4.c:489
+#: src/m4.c:492
 #, c-format
 msgid "warning: `m4 -%c' may be removed in a future release"
 msgstr ""
 
-#: src/m4.c:496
+#: src/m4.c:499
 #, c-format
 msgid "warning: `m4 %s' is deprecated"
 msgstr ""
 
-#: src/m4.c:572
+#: src/m4.c:575
 #, fuzzy, c-format
 msgid "bad debug flags: `%s'"
 msgstr "Falsche Debug Flags: »%s«"
 
-#: src/m4.c:578
+#: src/m4.c:581
 #, c-format
 msgid "warning: `m4 -e' is deprecated, use `-i' instead"
 msgstr ""
 
-#: src/m4.c:690
+#: src/m4.c:693
 msgid "stderr"
 msgstr ""
 
@@ -1093,49 +1103,50 @@ msgstr "FEHLER: Dateiende in Argumentliste"
 #: src/macro.c:332
 #, fuzzy, c-format
 msgid "recursion limit of %d exceeded, use -L<N> to change it"
-msgstr "FEHLER: Grenze der Rekursion von %d überschritten, benutze -L<N> zur Änderung"
+msgstr ""
+"FEHLER: Grenze der Rekursion von %d überschritten, benutze -L<N> zur Änderung"
 
-#: src/output.c:172 src/output.c:898 src/output.c:901
+#: src/output.c:174 src/output.c:902 src/output.c:905
 #, fuzzy
 msgid "cannot clean temporary file for diversion"
 msgstr "FEHLER: Kann keine temporäre Datei für Umleitung erzeugen"
 
-#: src/output.c:222 src/output.c:231 src/output.c:265 src/output.c:360
+#: src/output.c:224 src/output.c:233 src/output.c:267 src/output.c:362
 #, fuzzy
 msgid "cannot create temporary file for diversion"
 msgstr "FEHLER: Kann keine temporäre Datei für Umleitung erzeugen"
 
-#: src/output.c:250 src/output.c:257 src/output.c:269
+#: src/output.c:252 src/output.c:259 src/output.c:271
 #, fuzzy
 msgid "cannot seek within diversion"
 msgstr "Kann `stat' nicht auf Umleitung anwenden"
 
-#: src/output.c:341 src/output.c:353 src/output.c:502 src/output.c:733
+#: src/output.c:343 src/output.c:355 src/output.c:506 src/output.c:737
 #, fuzzy
 msgid "cannot close temporary file for diversion"
 msgstr "FEHLER: Kann keine temporäre Datei für Umleitung erzeugen"
 
-#: src/output.c:474
+#: src/output.c:478
 #, fuzzy
 msgid "ERROR: cannot flush diversion to temporary file"
 msgstr "FEHLER: Kann Umleitung nicht in temporäre Datei ausgeben"
 
-#: src/output.c:568
+#: src/output.c:572
 #, fuzzy
 msgid "ERROR: copying inserted file"
 msgstr "FEHLER: Während Kopieren einer eingefügten Datei"
 
-#: src/output.c:816
+#: src/output.c:820
 #, fuzzy
 msgid "error reading inserted file"
 msgstr "FEHLER: Während Lesen einer eingefügten Datei"
 
-#: src/output.c:983
+#: src/output.c:987
 #, fuzzy
 msgid "cannot stat diversion"
 msgstr "Kann `stat' nicht auf Umleitung anwenden"
 
-#: src/output.c:987
+#: src/output.c:991
 #, fuzzy
 msgid "diversion too large"
 msgstr "Die Umleitung (diversion) ist zu lang."
@@ -1213,7 +1224,9 @@ msgstr "Die Umleitung (diversion) ist zu lang."
 #~ msgstr "Falscher regulärer Ausdruck »%s«: %s"
 
 #~ msgid "INTERNAL ERROR: Builtin not found in builtin table! (trace_pre ())"
-#~ msgstr "INTERNER FEHLER: Eingebaute Funktion nicht in Tabelle gefunden! (trace_pre ())"
+#~ msgstr ""
+#~ "INTERNER FEHLER: Eingebaute Funktion nicht in Tabelle gefunden! "
+#~ "(trace_pre ())"
 
 #~ msgid "INTERNAL ERROR: Bad token data type (trace_pre ())"
 #~ msgstr "INTERNER FEHLER: Falscher Datentyp des Tokens (trace_pre ())"
@@ -1234,10 +1247,13 @@ msgstr "Die Umleitung (diversion) ist zu lang."
 #~ msgstr "INTERNER FEHLER: Eingebaute Funktion nicht in Tabelle gefunden!"
 
 #~ msgid "INTERNAL ERROR: Bad token data type in freeze_one_symbol ()"
-#~ msgstr "INTERNER FEHLER: Falscher Datentyp des Tokens in freeze_one_symbol ()"
+#~ msgstr ""
+#~ "INTERNER FEHLER: Falscher Datentyp des Tokens in freeze_one_symbol ()"
 
 #~ msgid "`%s' from frozen file not found in builtin table!"
-#~ msgstr "»%s« aus eingefrorener Datei nicht in Tabelle der eingebauten Funktionen gefunden!"
+#~ msgstr ""
+#~ "»%s« aus eingefrorener Datei nicht in Tabelle der eingebauten Funktionen "
+#~ "gefunden!"
 
 #~ msgid "Input reverted to %s, line %d"
 #~ msgstr "Eingabe zurückgenommen zu %s, Zeile %d"
@@ -1252,10 +1268,12 @@ msgstr "Die Umleitung (diversion) ist zu lang."
 #~ msgstr "INTERNER FEHLER: Falscher Aufruf von init_macro_token ()"
 
 #~ msgid "INTERNAL ERROR: Input stack botch in next_char ()"
-#~ msgstr "INTERNER FEHLER: Kellerspeicher der Eingabe durcheinander in next_char ()"
+#~ msgstr ""
+#~ "INTERNER FEHLER: Kellerspeicher der Eingabe durcheinander in next_char ()"
 
 #~ msgid "INTERNAL ERROR: Input stack botch in peek_input ()"
-#~ msgstr "INTERNER FEHLER: Kellerspeicher der Eingabe durcheinander in peek_input ()"
+#~ msgstr ""
+#~ "INTERNER FEHLER: Kellerspeicher der Eingabe durcheinander in peek_input ()"
 
 # This is the name of the input file when there is no current input file.
 # Is this ever printed in a message?
@@ -1266,7 +1284,8 @@ msgstr "Die Umleitung (diversion) ist zu lang."
 #~ msgstr "FEHLER: Keller voll.  (Unendliche `define' Rekursion?)"
 
 #~ msgid ""
-#~ "Mandatory or optional arguments to long options are mandatory or optional\n"
+#~ "Mandatory or optional arguments to long options are mandatory or "
+#~ "optional\n"
 #~ "for short options too.\n"
 #~ "\n"
 #~ "Operation modes:\n"
@@ -1283,21 +1302,27 @@ msgstr "Die Umleitung (diversion) ist zu lang."
 #~ "Operationsmodi:\n"
 #~ "      --help                   zeige diese Hilfe an und beende\n"
 #~ "      --version                zeige Versionsinformation an und beende\n"
-#~ "  -e, --interactive            keine Ausgabepufferung, ignoriere Interrupts\n"
+#~ "  -e, --interactive            keine Ausgabepufferung, ignoriere "
+#~ "Interrupts\n"
 #~ "  -E, --fatal-warnings         beende Ausführung nach erster Warnung\n"
-#~ "  -Q, --quiet, --silent        unterdrücke Warnungen bei eingebauten Funktionen\n"
-#~ "  -P, --prefix-builtins        erzwinge `m4_' Präfix für eingebaute Funktionen\n"
+#~ "  -Q, --quiet, --silent        unterdrücke Warnungen bei eingebauten "
+#~ "Funktionen\n"
+#~ "  -P, --prefix-builtins        erzwinge `m4_' Präfix für eingebaute "
+#~ "Funktionen\n"
 
 #~ msgid ""
 #~ "\n"
 #~ "Dynamic loading features:\n"
-#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search path\n"
+#~ "  -m, --module-directory=DIRECTORY  add DIRECTORY to the module search "
+#~ "path\n"
 #~ "  -M, --load-module=MODULE          load dynamic MODULE from M4MODPATH\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Dynamisches Nachladen:\n"
-#~ "  -m, --module-directory=VERZEICHNIS VERZEICHNIS in den Modulsuchpfad einfügen.\n"
-#~ "  -M, --load-module=MODUL            MODUL dynamisch vom M4MODPATH laden.\n"
+#~ "  -m, --module-directory=VERZEICHNIS VERZEICHNIS in den Modulsuchpfad "
+#~ "einfügen.\n"
+#~ "  -M, --load-module=MODUL            MODUL dynamisch vom M4MODPATH "
+#~ "laden.\n"
 
 #~ msgid ""
 #~ "\n"

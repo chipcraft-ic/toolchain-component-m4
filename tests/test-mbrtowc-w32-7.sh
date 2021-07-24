@@ -1,1 +1,4 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-mbrtowc-w32-7.sh
+#!/bin/sh
+
+# Test some UTF-8 locales.
+${CHECKER} ./test-mbrtowc-w32${EXEEXT} French_France Japanese_Japan Chinese_Taiwan Chinese_China 65001

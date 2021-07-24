@@ -1,1 +1,4 @@
-/home/mjemieli/TESTING/toolchain-component-m4/gnulib/tests/test-mbrtowc-w32-5.sh
+#!/bin/sh
+
+# Test a CP936 locale.
+${CHECKER} ./test-mbrtowc-w32${EXEEXT} Chinese_China 936
