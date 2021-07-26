@@ -115,6 +115,8 @@ m4_failure (int errnum, const char *format, ...)
   verror_at_line (EXIT_FAILURE, errnum, current_line ? current_file : NULL,
                   current_line, format, args);
   assume (false);
+
+  while(true) { /* no return */ };
 }
 
 /*-------------------------------.
@@ -142,6 +144,8 @@ m4_failure_at_line (int errnum, const char *file, int line,
   verror_at_line (EXIT_FAILURE, errnum, line ? file : NULL,
                   line, format, args);
   assume (false);
+
+  while(true) { /* no return */ };
 }
 
 #ifndef SIGBUS
