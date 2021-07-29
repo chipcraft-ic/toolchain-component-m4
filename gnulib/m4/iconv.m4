@@ -7,7 +7,7 @@ dnl with or without modifications, as long as this notice is preserved.
 
 dnl From Bruno Haible.
 
-AC_PREREQ([2.64])
+AC_PREREQ([2.59])
 
 dnl Note: AM_ICONV is documented in the GNU gettext manual
 dnl <https://www.gnu.org/software/gettext/manual/html_node/AM_005fICONV.html>.

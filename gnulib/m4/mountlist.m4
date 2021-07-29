@@ -6,7 +6,7 @@ dnl with or without modifications, as long as this notice is preserved.
 
 dnl From Jim Meyering.
 
-AC_PREREQ([2.60])
+AC_PREREQ([2.59])
 
 AC_DEFUN([gl_MOUNTLIST],
 [

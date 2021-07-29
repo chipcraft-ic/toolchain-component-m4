@@ -74,8 +74,7 @@ m4_define([_AC_CHECK_DECL_BODY],
 [  ac_save_ac_compile="$ac_compile"
   if test -n "$ac_compile_for_check_decl"; then
     ac_compile="$ac_compile_for_check_decl"
-  fi]
-m4_defn([_AC_CHECK_DECL_BODY])[  ac_compile="$ac_save_ac_compile"
+  fi
 ])
 
 # gl_00GNULIB

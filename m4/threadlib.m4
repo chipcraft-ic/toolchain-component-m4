@@ -6,7 +6,7 @@ dnl with or without modifications, as long as this notice is preserved.
 
 dnl From Bruno Haible.
 
-AC_PREREQ([2.60])
+AC_PREREQ([2.59])
 
 dnl The general structure of the multithreading modules in gnulib is that we
 dnl have three set of modules:

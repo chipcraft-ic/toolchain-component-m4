@@ -6,7 +6,7 @@ dnl with or without modifications, as long as this notice is preserved.
 
 dnl From Paul Eggert.
 
-AC_PREREQ([2.62])
+AC_PREREQ([2.59])
 
 # Define HAVE_LONG_LONG_INT if 'long long int' works.
 # This can be faster than what's in Autoconf 2.62 through 2.68.

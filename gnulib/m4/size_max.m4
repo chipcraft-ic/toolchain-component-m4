@@ -6,7 +6,7 @@ dnl with or without modifications, as long as this notice is preserved.
 
 dnl From Bruno Haible.
 
-AC_PREREQ([2.61])
+AC_PREREQ([2.59])
 
 AC_DEFUN([gl_SIZE_MAX],
 [

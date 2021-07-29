@@ -4,7 +4,7 @@ dnl This file is free software; the Free Software Foundation
 dnl gives unlimited permission to copy and/or distribute it,
 dnl with or without modifications, as long as this notice is preserved.
 
-AC_PREREQ([2.61])
+AC_PREREQ([2.59])
 
 AC_DEFUN_ONCE([gl_HEADER_ERRNO_H],
 [

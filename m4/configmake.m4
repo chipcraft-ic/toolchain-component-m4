@@ -4,7 +4,7 @@ dnl This file is free software; the Free Software Foundation
 dnl gives unlimited permission to copy and/or distribute it,
 dnl with or without modifications, as long as this notice is preserved.
 
-AC_PREREQ([2.60])
+AC_PREREQ([2.59])
 
 # gl_CONFIGMAKE_PREP
 # ------------------

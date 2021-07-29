@@ -6,7 +6,7 @@ dnl with or without modifications, as long as this notice is preserved.
 
 dnl Written by Paul Eggert.
 
-AC_PREREQ([2.60])
+AC_PREREQ([2.59])
 
 # Test whether the flags O_NOATIME and O_NOFOLLOW actually work.
 # Define HAVE_WORKING_O_NOATIME to 1 if O_NOATIME works, or to 0 otherwise.

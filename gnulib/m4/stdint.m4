@@ -7,7 +7,7 @@ dnl with or without modifications, as long as this notice is preserved.
 dnl From Paul Eggert and Bruno Haible.
 dnl Test whether <stdint.h> is supported or must be substituted.
 
-AC_PREREQ([2.61])
+AC_PREREQ([2.59])
 
 AC_DEFUN_ONCE([gl_STDINT_H],
 [
